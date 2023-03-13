@@ -61,6 +61,20 @@
                                     with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.
                                 </p> -->
                                 <?php
+                                try{
+                                    $db = new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password');
+                                } catch (PDOException $e) {
+                                    // 接続できなかったらエラー表示
+                                    echo 'DB接続エラー！: ' . $e->getMessage();
+                                }
+                                $Data = $db->query('SELECT * FROM 部品登録 WHERE id=1');
+                                $Detail = $Data->fetch();
+                                ?>
+                                <article>
+                                <pre><?php print($Detail['部品名']);?></pre>
+                                <a href="index.php">一覧画面へ戻る</a>
+                                </article>
+                                <?php
                                 $pdo=new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password');
                                 foreach($pdo -> query('select*from food')as $row){
                                     echo'<tr>';
