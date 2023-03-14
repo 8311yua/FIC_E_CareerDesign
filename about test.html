@@ -50,7 +50,7 @@
                     <div class="row">
                         <div class="col-xl-9 col-lg-10 mx-auto">
                             <div class="bg-faded rounded p-5">
-                                <!-- <h2 class="section-heading mb-4">
+                                <h2 class="section-heading mb-4">
                                     <span class="section-heading-upper">Reserve</span>
                                     <span class="section-heading-lower">Reserve</span>
                                 </h2>
@@ -59,30 +59,7 @@
                                     We guarantee that you will fall in
                                     <em>lust</em>
                                     with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.
-                                </p> -->
-                                <?php
-                                try{
-                                    $db = new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password');
-                                } catch (PDOException $e) {
-                                    // 接続できなかったらエラー表示
-                                    echo 'DB接続エラー！: ' . $e->getMessage();
-                                }
-                                $Data = $db->query('SELECT * FROM 部品登録 WHERE id=1');
-                                $Detail = $Data->fetch();
-                                ?>
-                                <article>
-                                <pre><?php print($Detail['部品名']);?></pre>
-                                <a href="index.php">一覧画面へ戻る</a>
-                                </article>
-                                <?php
-                                $pdo=new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password');
-                                foreach($pdo -> query('select*from food')as $row){
-                                    echo'<tr>';
-                                    echo '<td>',$row['name'],'</td>';
-                                    echo '<td>',$row['price'],'</td>';
-                                    echo'</tr>';
-                                }
-                                ?>
+                                </p>
                             </div>
                         </div>
                     </div>
