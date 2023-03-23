@@ -24,7 +24,6 @@
                 <span class="site-heading-upper text-primary mb-3">
                     <img style="width: 10%;" src="assets/images/logo4.png" alt="..." />
                 </span>
-            
                 <span class="site-heading-lower">Shitamichi's Bakery</span>
             </h1>
         </header>
