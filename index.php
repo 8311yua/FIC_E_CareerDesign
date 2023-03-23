@@ -5,28 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        
+        <!-- タイトル -->
         <title>Shitamichi's Bakery</title>
         <link rel="icon" type="image/x-icon" href="assets/images/logo2.png" />
-        <!-- Font Awesome icons (free version)-->
+        <!-- icons-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- CSS-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+
     <body>
         <header>
-
             <h1 class="site-heading text-center text-faded d-none d-lg-block">
                 <span class="site-heading-upper text-primary mb-3">
                     <img style="width: 10%;" src="assets/images/logo4.png" alt="..." />
                 </span>
-            
                 <span class="site-heading-lower">Shitamichi's Bakery</span><br>
-                <span class="site-heading-lower" style="font-size: 50%;">思わず笑顔になるおいしいコーヒーを提供しています。<br>
-                    クッキーやクロワッサン、タルトやケーキなどのお菓子と一緒にいかがでしょうか。</span>
+                <span class="site-heading-lower" style="font-size: 50%;">思わず笑顔になるおいしいコーヒーを提供しています。<br>クッキーやクロワッサン、タルトやケーキなどのお菓子と一緒にいかがでしょうか。</span>
             </h1>
         </header>
         <!-- Navigation-->
