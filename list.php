@@ -34,17 +34,10 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
-<<<<<<< HEAD
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.php">Home</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="list.php">Menu</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.php">Reservation</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.php">Store</a></li>
-=======
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="..index.html">Home</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="list.php">Menu</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="..products.html">Reservation</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="..store.html">Store</a></li>
->>>>>>> a28e0b0f05129071a120b0f727bffcf710615f0a
                     </ul>
                 </div>
             </div>
