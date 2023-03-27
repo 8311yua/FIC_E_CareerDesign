@@ -4,19 +4,15 @@
 $dsn = 'mysql:dbname=reserve_bakery;host=localhost;charset=utf8';
 $user = 'discipline';
 $password = 'tr_2146';
+
 unset($_SESSION['customer']);
-try{
-    $dbh = new PDO( $dsn, $user, $password );
-}catch( PDOException $error ){
-    echo "接続失敗:".$error->getMessage();
-    die();
-}
+$pdo=new PDO($dsn, $user, $password);
 
 $sql=$pdo->prepare('select * from customer where customer_name=? and password=?');
 $sql->execute([$_REQUEST['name'], $_REQUEST['password']]);
 foreach ($sql as $row) {
     $_SESSION['customer']=[
-        'id'=>$row['id'], 'name'=>$row['name'],
+        'id'=>$row['customer_id'], 'name'=>$row['customer_name'],
         'password'=>$row['password'], 'address'=>$row['address']];
 }
 if (isset($_SESSION['customer'])) {
