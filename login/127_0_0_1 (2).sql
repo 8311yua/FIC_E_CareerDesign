@@ -58,7 +58,6 @@ ALTER TABLE `customer`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
 --
 -- AUTO_INCREMENT for table `customer`
 --
