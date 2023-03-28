@@ -38,6 +38,8 @@
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="list.php">Menu</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.php">Reservation</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.php">Store</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="login/login-input.php">test</a></li>
+                    
                     </ul>
                 </div>
             </div>
