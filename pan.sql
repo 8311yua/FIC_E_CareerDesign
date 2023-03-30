@@ -12,32 +12,34 @@ create table food (
 create table drink (
 	id int auto_increment primary key, 
 	name varchar(200) not null, 
-	pricem int not null,
 	prices int not null,
+	pricem int not null,
 	pricel int not null
 );
+INSERT INTO food (`id`, `name`, `price`) VALUES
+(1, 'クッキー\r\n', 120),
+(2, 'クロワッサン\r\n', 200),
+(3, 'タルト\r\n', 400),
+(4, 'ケーキ\r\n', 400),
+(5, 'サンドイッチ\r\n', 300),
+(6, 'パンケーキ\r\n', 500),
+(7, 'フレンチトースト\r\n', 250);
 
-insert into food values(null, 'クッキー', 120);
-insert into food values(null, 'クロワッサン', 200);
-insert into food values(null, 'タルト', 400);
-insert into food values(null, 'ケーキ', 400);
-insert into food values(null, 'サンドイッチ', 300);
-insert into food values(null, 'パンケーキ', 500);
-insert into food values(null, 'フレンチトースト', 250);
+INSERT INTO drink (`id`,`name`,`prices`,`pricem`,`pricel`) VALUES
 
-insert into drink values(null, 'アイスレモンティー', 400,350,450);
-insert into drink values(null, 'アイスミルクティー', 400,350,450);
-insert into drink values(null, 'アイスティー', 400,350,450);
-insert into drink values(null, 'レモンティー', 400,350,450);
-insert into drink values(null, 'ミルクティー', 400,350,450);
-insert into drink values(null, '紅茶', 400,350,450);
-insert into drink values(null, 'アイスコーヒー', 350,300,400);
-insert into drink values(null, 'ホットコーヒー', 350,300,400);
-insert into drink values(null, 'アイスラテ', 400,350,450);
-insert into drink values(null, 'ラテ', 400,350,450);
-insert into drink values(null, 'アイスキャラメルラテ', 450,400,500);
-insert into drink values(null, 'キャラメルラテ', 450,400,500);
-insert into drink values(null, 'アイスココア', 450,400,500);
-insert into drink values(null, 'ココア', 450,400,500);
-insert into drink values(null, 'ホットチョコ', 450,400,500);
-insert into drink values(null, 'オレンジジュース', 300,250,350);
+(8, 'アイスレモンティー', 350,400,450),
+(9, 'アイスミルクティー', 350,400,450),
+(10, 'アイスティー', 350,400,450),
+(11, 'レモンティー', 350,400,450),
+(12, 'ミルクティー', 350,400,450),
+(13, '紅茶', 350,400,450),
+(14, 'アイスコーヒー',300,350,400),
+(15, 'ホットコーヒー',300,350,400),
+(16, 'アイスラテ', 350,400,450),
+(17, 'ラテ', 350,400,450),
+(18, 'アイスキャラメルラテ', 400,450,500),
+(19, 'キャラメルラテ', 400,450,500),
+(20, 'アイスココア', 400,450,500),
+(21, 'ココア', 400,450,500),
+(22, 'ホットチョコ', 400,450,500),
+(23, 'オレンジジュース',250,300,350);
