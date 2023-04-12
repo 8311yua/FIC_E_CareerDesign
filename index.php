@@ -50,7 +50,7 @@
                     <div class="product-item-title d-flex">
                         <div class="bg-faded p-5 d-flex ms-auto rounded">
                             <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper"></span>
+                                <span class="section-heading-upper">人気No.1!!</span>
                                 <span class="section-heading-lower">tart</span>
                             </h2>
                         </div>
