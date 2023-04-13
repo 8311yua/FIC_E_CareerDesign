@@ -44,7 +44,6 @@
         </nav>
         <section class="page-section about-heading">
             <div class="container">
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.376263773358!2d130.40489757447742!3d33.595540541709624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191eb17aed739%3A0x540cd17435601fd9!2z44CSODEyLTAwMjYg56aP5bKh55yM56aP5bKh5biC5Y2a5aSa5Yy65LiK5bed56uv55S677yR77yU4oiS77yR77yWIOWkp-WOn-WtpuWckuemj-WyoeagoeacrOmkqA!5e0!3m2!1sja!2sjp!4v1681368023332!5m2!1sja!2sjp" width="1100" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 <div class="about-heading-content">
                     <div class="row">
                         <div class="col-xl-9 col-lg-10 mx-auto">
