@@ -50,7 +50,7 @@
                     <div class="product-item-title d-flex">
                         <div class="bg-faded p-5 d-flex ms-auto rounded">
                             <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper">人気No.1!!</span>
+                                <span class="section-heading-upper">☆人気NO.1☆</span>
                                 <span class="section-heading-lower">tart</span>
                             </h2>
                         </div>
@@ -86,14 +86,14 @@
                     <div class="product-item-title d-flex">
                         <div class="bg-faded p-5 d-flex ms-auto rounded">
                             <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper">From Around the World</span>
-                                <span class="section-heading-lower">Bulk Speciality Blends</span>
+                                <span class="section-heading-upper">ホットでもアイスでも♡</span>
+                                <span class="section-heading-lower">drink</span>
                             </h2>
                         </div>
                     </div>
                     <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/images/Cup-of-Hot-Chocolate.png" alt="..." />
                     <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p></div>
+                        <div class="bg-faded p-5 rounded"><p class="mb-0">パンにはもちろんタルトやクッキーにもとても合う飲み物をご用意しております。</p></div>
                     </div>
                 </div>
             </div>

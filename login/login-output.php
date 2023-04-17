@@ -1,4 +1,4 @@
-<form action="store.php" metod="post">
+<form action="store.php" method="post">
 <?php session_start();?>
 <?php
 // 'mysql:dbname="データベース名を入力";host=localhost;charset=utf8';
