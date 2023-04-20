@@ -88,5 +88,3 @@ $pdo =new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password
         </div>
     </div>
 </section>
-<!-- Product Section End -->
-<?php require 'footer.php' ?>
