@@ -18,6 +18,7 @@
 
         <link rel="stylesheet" href="css/test.css">
         <link rel="stylesheet" href="css/test2.css">
+
     </head>
 
 
@@ -27,11 +28,6 @@ $pdo =new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password
 ?>
 <!-- Product Section Begin -->
 <header>
-    <h1 class="site-heading text-center text-faded d-none d-lg-block">
-        <!-- <span class="site-heading-lower">Portfolio studio</span><br>
-        <span class="site-heading-lower" style="font-size: 50%;">YUA MURATA</span> -->
-
-    </h1>
 </header>
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
@@ -78,6 +74,10 @@ $pdo =new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password
                             echo '<div class="product__item__text">';
                             echo '<h5><a href="test.php">', $row['name'], '</a></h5>';
                             echo '<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5>';
+                            // echo '<p><a href="index.php"><img src="','image/',$row['image1'],'"class="product__item__pic"></a></p>';
+                            echo '<div class="product__item__text">';
+                            echo '<h5><a href="test.php">', $row['name'], '</a></h5>';
+                            echo '<h5>', $row['price'], '</h5>';
                             echo '</div>';
                             echo '</div>';
                             echo '</div>';
