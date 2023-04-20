@@ -5,49 +5,88 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <!-- タイトル -->
+        
         <title>Shitamichi's Bakery</title>
         <link rel="icon" type="image/x-icon" href="assets/images/logo2.png" />
-        <!-- icons-->
+        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-        <!-- CSS-->
-        <link href="css/test.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
 
+        <link rel="stylesheet" href="css/test.css">
+        <link rel="stylesheet" href="css/test2.css">
     </head>
-    <body>
-        <section class="page-section about-heading">
+
+
+<body>
+<?php
+$pdo =new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password');
+?>
+<!-- Product Section Begin -->
+<header>
+    <h1 class="site-heading text-center text-faded d-none d-lg-block">
+        <!-- <span class="site-heading-lower">Portfolio studio</span><br>
+        <span class="site-heading-lower" style="font-size: 50%;">YUA MURATA</span> -->
+
+    </h1>
+</header>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.php">Shitamichi's Bakery</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="test.php#food">food</a></li>
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="test.php#drink">drink</a></li>            
+            </ul>
+        </div>
+    </div>
+</nav>
+<h1>～～商品～～</h1>
+<section class="product spad">
+    <div class="container">
         <div class="col-xl-9 col-lg-10 mx-auto">
             <div class="bg-faded rounded p-5">
-            <div class="container">
-                <!-- ログイン画面 -->
-                <div class="login-wrap">
-                <div class="login-html">
-                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">ログイン</label>
-                    <!-- ログイン画面 -->
-                    <div class="login-form">
-                    <div class="sign-in-htm">
-                        <div class="group">
-                            <!-- 入力内容をlogin-output.phpへ -->
-                            <form action="login-output.php" method="post">
-                        <label for="user" class="label">ユーザー名</label>
-                        <input name="name" id="user" type="text" class="input">
-                        </div>
-                        <div class="group">
-                        <label for="pass" class="label">パスワード</label>
-                        <input name="password" id="pass" type="password" class="input" data-type="password">
-                        </div>
-                        <div class="group">
-                        <input type="submit" class="button" value="ログイン">
-                            </form>
-                            <a href="sign_up_input.php">新規登録</a>
-                        </div>
+                <p class="text"></p>
+                <h4 id="food">food</h4>
+                    <div class="row">
+                        <?php
+                        foreach($pdo->query('select * from food') as $row){
+                            echo '<div class="col-lg-4 col-md-6 col-sm-6">';
+                            echo '<div class="product__item"><tr>';
+                            echo '<p><a href="test.php"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></a></p>';
+                            echo '<div class="product__item__text">';
+                            echo '<h5><a href="test.php">', $row['name'], '</a></h5>';
+                            echo '<h5>','¥', $row['price'], '</h5>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                        }
+                        ?>
                     </div>
-                </div>
-                </div>
+                <h4 id="drink">drink</h4>
+                    <div class="row">
+                        <?php
+                        foreach($pdo->query('select * from drink') as $row){
+                            echo '<div class="col-lg-4 col-md-6 col-sm-6">';
+                            echo '<div class="product__item"><tr>';
+                            echo '<p><a href="test.php"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></a></p>';
+                            echo '<div class="product__item__text">';
+                            echo '<h5><a href="test.php">', $row['name'], '</a></h5>';
+                            echo '<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5>';
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
+                        }
+                        ?>
+                    </div>
             </div>
-        </section>
-    </body>
-</html>
+        </div>
+    </div>
+</section>
+<!-- Product Section End -->
+<?php require 'footer.php' ?>

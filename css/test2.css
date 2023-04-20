@@ -1,0 +1,6 @@
+.product__item__pic {
+	width: 96px;
+    height: 65px;
+	position: relative;
+	border-radius: 5px;
+}

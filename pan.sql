@@ -6,6 +6,7 @@ use pan;
 create table food (
 	id int auto_increment primary key, 
 	name varchar(200) not null, 
+	image varchar(200) not null,
 	price int not null
 );
 
@@ -16,14 +17,14 @@ create table drink (
 	pricem int not null,
 	pricel int not null
 );
-INSERT INTO food (`id`, `name`, `price`) VALUES
-(1, 'クッキー\r\n', 120),
-(2, 'クロワッサン\r\n', 200),
-(3, 'タルト\r\n', 400),
-(4, 'ケーキ\r\n', 400),
-(5, 'サンドイッチ\r\n', 300),
-(6, 'パンケーキ\r\n', 500),
-(7, 'フレンチトースト\r\n', 250);
+INSERT INTO food (`id`, `name`,`image`, `price`) VALUES
+(1, 'クッキー\r\n','クッキー.jpg', 120),
+(2, 'クロワッサン\r\n','クロワッサン.jpg', 200),
+(3, 'タルト\r\n','いちごタルト2.jpg', 400),
+(4, 'ケーキ\r\n','いちごケーキ.jpg', 400),
+(5, 'サンドイッチ\r\n','サンドイッチ.jpg', 300),
+(6, 'パンケーキ\r\n','パンケーキ.jpg', 500),
+(7, 'フレンチトースト\r\n','フレンチトースト.jpg', 250);
 
 INSERT INTO drink (`id`,`name`,`prices`,`pricem`,`pricel`) VALUES
 
