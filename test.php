@@ -74,10 +74,6 @@ $pdo =new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password
                             echo '<div class="product__item__text">';
                             echo '<h5><a href="test.php">', $row['name'], '</a></h5>';
                             echo '<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5>';
-                            // echo '<p><a href="index.php"><img src="','image/',$row['image1'],'"class="product__item__pic"></a></p>';
-                            echo '<div class="product__item__text">';
-                            echo '<h5><a href="test.php">', $row['name'], '</a></h5>';
-                            echo '<h5>', $row['price'], '</h5>';
                             echo '</div>';
                             echo '</div>';
                             echo '</div>';
