@@ -22,41 +22,9 @@ $sql->execute([$_REQUEST['id']]);
                         ?>
                     </div>
                 </div>
-                <!-- img end -->
-                <div class="col-lg-7 id="product_overview">
-                    <div class="anime__details__text">
-                        <!-- title -->
-                        <div class="anime__details__title">
-                        <?php
-                            echo '<h3>', $row['title'], '</h3>';
-                            echo '<span><a href="download_files/', $row['file'],'" class="download_link">ダウンロード</a></span>';
-                        ?>
-                        </div>
-                        <!-- title end -->
-                        <p>
-                        <?php
-                            echo $row['overview'];
-                        ?>
-                        </p>
-                        <div class="anime__details__widget">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-8">
-                                    <ul>
-                                        <?php
-                                            //タブレットの場合、スマホの場合のみ改行
-                                            echo '<li><span>一番アピールしたいこと</span><br class="tb-br"><br class="sp-br"> ', $row['appeal_point'], '</li>';
-                                            echo '<li><span>補足説明</span><br class="tb-br"><br class="sp-br"> ', $row['supplement'], '</li>';
-                                        ?>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
 <!-- Product Section End -->
 
-<?php require 'footer.php' ?>
