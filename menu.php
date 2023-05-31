@@ -38,13 +38,12 @@ $pdo =new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password
         </div>
     </div>
 </nav>
-<h1>～～商品～～</h1>
 <section class="product spad">
     <div class="container">
         <div class="col-xl-9 col-lg-10 mx-auto">
             <div class="bg-faded rounded p-5">
                 <!-- food -->
-                <h4 id="food">food</h4>
+                <h2 id="food">Food</h2>
                 <div class="row">                    
                     <?php
                     foreach($pdo->query('select * from Food') as $row){
@@ -66,7 +65,7 @@ $pdo =new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password
                 </div>
                 <!-- drink -->
                 <!-- まだ手を加えてない -->
-                <h4 id="drink">drink</h4>
+                <h2 id="drink">Drink</h2>
                 <div class="row">
                     <?php
                     foreach($pdo->query('select * from drink') as $row){
