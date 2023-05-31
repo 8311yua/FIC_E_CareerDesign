@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        
         <title>Shitamichi's Bakery</title>
         <link rel="icon" type="image/x-icon" href="assets/images/logo2.png" />
         <!-- Font Awesome icons (free version)-->
@@ -17,8 +16,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/test.css">
         <link rel="stylesheet" href="css/test2.css">
+        <link href="tes.css" rel="stylesheet" />
     </head>
-
 <body>
 <?php
 $pdo =new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password');
@@ -34,7 +33,7 @@ $pdo =new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="test.php#food">food</a></li>
-                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="test.php#drink">drink</a></li>            
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="test.php#drink">drink</a></li>
             </ul>
         </div>
     </div>
@@ -44,39 +43,68 @@ $pdo =new PDO('mysql:host=localhost;dbname=pan;charset=utf8', 'staff', 'password
     <div class="container">
         <div class="col-xl-9 col-lg-10 mx-auto">
             <div class="bg-faded rounded p-5">
-                <p class="text"></p>
+                <!-- food -->
                 <h4 id="food">food</h4>
-                    <div class="row">
-                        <?php
-                        foreach($pdo->query('select * from food') as $row){
-                            echo '<div class="col-lg-4 col-md-6 col-sm-6">';
-                            echo '<div class="product__item"><tr>';
-                            echo '<p><a href="test.php"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></a></p>';
-                            echo '<div class="product__item__text">';
-                            echo '<h5><a href="test.php">', $row['name'], '</a></h5>';
-                            echo '<h5>','¥', $row['price'], '</h5>';
-                            echo '</div>';
-                            echo '</div>';
-                            echo '</div>';
-                        }
-                        ?>
-                    </div>
+                <div class="row">                    
+                    <?php
+                    foreach($pdo->query('select * from Food') as $row){
+                        $id = $row['id'];
+                        echo '<div class="col-lg-4 col-md-6 col-sm-6">';
+                        echo '<div class="product__item"><tr>';
+                        // ここで、ホップアップウィンドウで開かせる(画像) 
+                        echo '<label for="pu-on"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></label>';
+                        echo '<div class="product__item__text">';
+                        // ここに上のコードを加える
+                        // echo '<h5><label for="pu-on"></label></h5>';
+                        echo '<h5><a href="test.php?id=',$id,'">',$row['name'],'</a></h5>';
+                        echo '<h5>','¥', $row['price'], '</h5>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
+                    ?>
+                </div>
+                <!-- drink -->
+                <!-- まだ手を加えてない -->
                 <h4 id="drink">drink</h4>
-                    <div class="row">
-                        <?php
-                        foreach($pdo->query('select * from drink') as $row){
-                            echo '<div class="col-lg-4 col-md-6 col-sm-6">';
-                            echo '<div class="product__item"><tr>';
-                            echo '<p><a href="test.php"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></a></p>';
-                            echo '<div class="product__item__text">';
-                            echo '<h5><a href="test.php">', $row['name'], '</a></h5>';
-                            echo '<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5>';
-                            echo '</div>';
-                            echo '</div>';
-                            echo '</div>';
-                        }
-                        ?>
+                <div class="row">
+                    <?php
+                    foreach($pdo->query('select * from drink') as $row){
+                        echo '<div class="col-lg-4 col-md-6 col-sm-6">';
+                        echo '<div class="product__item"><tr>';
+                        // ここで、ホップアップウィンドウで開かせる(画像) 
+                        echo '<label for="pu-on"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></label>';
+                        echo '<div class="product__item__text">';
+                        // ここに上のコードを加える
+                        echo '<h5><a href="test.php?id=',$id,'">',$row['name'],'</a></h5>';
+                        echo '<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
+                    ?>
+                </div>
+                    
+                    <!-- echo'<input type="checkbox" id="pu-on">';
+                    echo'<div class="pu">';
+                    echo'<label for="pu-on" class="icon-close">×</label>';
+                    echo'<div class="pu-content">';
+                    echo '<a href="gameDetails.php?id=', $id,'"><div class="product__item__pic set-bg" data-setbg="','assets/images/',$row['image'],'">';
+                    echo'<label for="pu-on"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></label>';
+                    echo'</div>';
+                    echo'</div>';
+                    echo'</div>';
+                    -->
+
+            </div>
+            <input type="checkbox" id="pu-on">
+                <div class="pu">
+                    <label for="pu-on" class="icon-close">×</label>
+                    <div class="pu-content">
+                        <h1>～～商品～～</h1>
+                        <label for="pu-on"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></label>
                     </div>
+                </div>
             </div>
         </div>
     </div>
