@@ -1,3 +1,7 @@
+ファイル名 → 役割、(必要度数)
+index.html → ホーム(〇)
+list_2.php → 開店日時の表示(△)
+
 # Auto detect text files and perform LF normalization
 * text=auto
 ホーム画面      〇index
