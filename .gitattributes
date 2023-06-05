@@ -1,6 +1,16 @@
-ファイル名 → 役割、(必要度数)
-index.html → ホーム(〇)
-list_2.php → 開店日時の表示(△)
+ファイル名       →役割
+index.html      →ホーム
+list.php        →元メニュー(使うかわからん)
+menu.php        →現メニュー
+store.html      →開店開店時間マップの表示
+
+フォルダ名       →役割
+assets          →画像ファイル
+css             →css
+js              →js
+login           →ログイン機能すべて
+seat            →席予約
+
 
 # Auto detect text files and perform LF normalization
 * text=auto
