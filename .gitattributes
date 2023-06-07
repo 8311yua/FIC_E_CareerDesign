@@ -1,9 +1,10 @@
-ファイル名       →役割
-index.html      →ホーム
-list.php        →元メニュー(使うかわからん)
-menu.php        →現メニュー
-store.html      →開店開店時間マップの表示
-reseavation.html→(未使用)
+ファイル名               →役割
+index.html              →ホーム
+list.php                →元メニュー(使うかわからん)
+menu.php                →現メニュー
+store.html              →開店開店時間マップの表示
+server_connection.php   →データベース接続
+reseavation.html        →(未使用)
 
 フォルダ名       →役割
 assets          →画像ファイル
@@ -15,15 +16,11 @@ seat            →席予約
 
 # Auto detect text files and perform LF normalization
 * text=auto
-ホーム画面      〇index
-メニュー一覧    〇list
 予約画面(商品)  
         →新規、既存のログイン(DB)
-<<<<<<< Updated upstream
         ※クーポンなどを配るとなると、各個人で管理しなければならないため
-お店の情報(地図)store
 
-<<<<<<< HEAD
-=======
-お店の情報(地図)store
-
+ログイン用SQLとpan.sqlを接続
+予約サイト
+座席予約
+予約サイト作成後、リンクの接続
