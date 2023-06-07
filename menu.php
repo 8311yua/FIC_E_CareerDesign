@@ -19,10 +19,8 @@
         <link href="css/test.css"   rel="stylesheet">
     </head>
 <body>
+<!-- データベース -->
 <?php require 'server_connection.php' ?>
-<!-- Product Section Begin -->
-<header>
-</header>
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
