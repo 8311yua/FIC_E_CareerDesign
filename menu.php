@@ -14,94 +14,83 @@
         <!-- fonts-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-        <!-- CSS-->
+        <!-- CSS -->
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/test.css"   rel="stylesheet">
+        <link href="css/photograph.css"   rel="stylesheet">
     </head>
-<body>
-<!-- データベース -->
-<?php require 'server_connection.php' ?>
-<!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.php">Shitamichi's Bakery</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-                
-                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="test.php#food">food</a></li>
-                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="test.php#drink">drink</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<section class="product spad">
-    <div class="container">
-        <div class="col-xl-9 col-lg-10 mx-auto">
-            <div class="bg-faded rounded p-5">
-                <!-- food -->
-                <h2 id="food">Food</h2>
-                <div class="row">                    
-                    <?php
-                    foreach($pdo->query('select * from Food') as $row){
-                        $id = $row['id'];
-                        echo '<div class="col-lg-4 col-md-6 col-sm-6">';
-                        echo '<div class="product__item"><tr>';
-                        // ここで、ホップアップウィンドウで開かせる(画像) 
-                        echo '<label for="pu-on"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></label>';
-                        echo '<div class="product__item__text">';
-                        // ここに上のコードを加える
-                        // echo '<h5><label for="pu-on"></label></h5>';
-                        echo '<h5><a href="test.php?id=',$id,'">',$row['name'],'</a></h5>';
-                        echo '<h5>','¥', $row['price'], '</h5>';
-                        echo '</div>';
-                        echo '</div>';
-                        echo '</div>';
-                    }
-                    ?>
-                </div>
-                <!-- drink -->
-                <!-- まだ手を加えてない -->
-                <h2 id="drink">Drink</h2>
-                <div class="row">
-                    <?php
-                    foreach($pdo->query('select * from drink') as $row){
-                        echo '<div class="col-lg-4 col-md-6 col-sm-6">';
-                        echo '<div class="product__item"><tr>';
-                        // ここで、ホップアップウィンドウで開かせる(画像) 
-                        echo '<label for="pu-on"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></label>';
-                        echo '<div class="product__item__text">';
-                        // ここに上のコードを加える
-                        echo '<h5><a href="test.php?id=',$id,'">',$row['name'],'</a></h5>';
-                        echo '<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5>';
-                        echo '</div>';
-                        echo '</div>';
-                        echo '</div>';
-                    }
-                    ?>
-                </div>
-                    
-                    <!-- echo'<input type="checkbox" id="pu-on">';
-                    echo'<div class="pu">';
-                    echo'<label for="pu-on" class="icon-close">×</label>';
-                    echo'<div class="pu-content">';
-                    echo '<a href="gameDetails.php?id=', $id,'"><div class="product__item__pic set-bg" data-setbg="','assets/images/',$row['image'],'">';
-                    echo'<label for="pu-on"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></label>';
-                    echo'</div>';
-                    echo'</div>';
-                    echo'</div>';
-                    -->
-
+    
+    <!-- メイン -->
+    <body>
+        <header>
+            <div class="wrapper">
+                <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                    <span class="site-heading-upper text-primary mb-3">
+                        <img style="width: 10%;" src="assets/images/logo4.png" alt="..." />
+                    </span>
+                    <span class="site-heading-lower">Shitamichi's Bakery</span>
+                    <!-- ↓　index.htmlに飛ぶリンクあり -->
+                    <!-- <span class="site-heading-lower"><a class="nav-link text-uppercase" href="index.html">Shitamichi's Bakery</a></span> -->
+                </h1>
             </div>
-            <input type="checkbox" id="pu-on">
-                <div class="pu">
-                    <label for="pu-on" class="icon-close">×</label>
-                    <div class="pu-content">
-                        <h1>～～商品～～</h1>
-                        <label for="pu-on"><img src="','assets/images/',$row['image'],'"class="product__item__pic"></label>
+        </header>
+        <!-- データベース -->
+        <?php require 'server.php' ?>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.php">Shitamichi's Bakery</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="test.php#food">food</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="test.php#drink">drink</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="product spad">
+            <div class="container">
+                <div class="col-xl-9 col-lg-10 mx-auto">
+                    <div class="bg-faded rounded p-5">
+                        <!-- food -->
+                        <h2 id="food">Food</h2>
+                        <div class="row">                    
+                            <?php
+                            foreach($pdo->query('select * from Food') as $row){
+                                $id = $row['id'];
+                                echo '<div class="col-lg-4 col-md-6 col-sm-6">';
+                                echo '<div class="product__item"><tr>';
+                                echo '<img src="','assets/images/',$row['image'],'"class="product__item__pic">';
+                                echo '<div class="product__item__text">';
+                                echo '<h5><a href="test.php?id=',$id,'">',$row['name'],'</a></h5>';
+                                echo '<h5>','¥', $row['price'], '</h5>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '</div>';
+                            }
+                            ?>
+                        </div>
+                        <!-- drink -->
+                        <h2 id="drink">Drink</h2>
+                        <div class="row">
+                            <?php
+                            foreach($pdo->query('select * from drink') as $row){
+                                echo '<div class="col-lg-4 col-md-6 col-sm-6">';
+                                echo '<div class="product__item"><tr>';
+                                echo '<img src="','assets/images/',$row['image'],'"class="product__item__pic">';
+                                echo '<div class="product__item__text">';
+                                echo '<h5><a href="test.php?id=',$id,'">',$row['name'],'</a></h5>';
+                                echo '<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '</div>';
+                            }
+                            ?>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+    </body>
+</html>
