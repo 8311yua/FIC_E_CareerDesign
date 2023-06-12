@@ -11492,7 +11492,7 @@ p {
 }
 
 
-.slider {
+/* .slider {
   width: 300px;
   height: 200px;
   overflow: hidden;
@@ -11500,8 +11500,8 @@ p {
   position: relative;
 
 
-}
-.slider-item {
+} */
+/* .slider-item {
   width: 300px;
   float: left;
 }
@@ -11511,9 +11511,9 @@ img{
 .slider-inner {
   width: 300%; 
   animation: slider 10s infinite ease;
-}
+} */
 
-@keyframes slider {
+/* @keyframes slider {
     0% {
     transform: translateX(0);
     }
@@ -11526,4 +11526,4 @@ img{
     100% {
     transform: translateX(0);
     }
-}
+} */

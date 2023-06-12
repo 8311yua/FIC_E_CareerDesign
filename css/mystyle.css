@@ -2,7 +2,7 @@
 スライダーのためのcss
 ===================================*/
 .slider {
-    position:relative;
+    position: relative;
 	z-index: 1;
 	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
 	height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
