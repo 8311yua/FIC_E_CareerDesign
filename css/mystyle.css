@@ -1,16 +1,18 @@
+
+
 /*==================================================
 スライダーのためのcss
 ===================================*/
 .slider {
     position: relative;
-	z-index: 1;
-	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
-	height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+        z-index: 1;
+        /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+        height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
 }
 /*　背景画像設定　*/
 
 .slider-item01 {
-    background:url(../assets/images/いちごケーキ.jpg);
+    background:url(../assets/images/パンケーキ.jpg);
 }
 
 .slider-item02 {
@@ -18,7 +20,7 @@
 }
 
 .slider-item03 {
-    background:url(../assets/images/チョコケーキ.jpg);
+    background:url(../assets/images/チョコタルト.jpg);
 }
 
 .slider-item {
@@ -54,8 +56,8 @@
     right:2.5%;
     transform: rotate(45deg);
 }
-
-/*ドットナビゲーションの設定*/
+/* 
+ドットナビゲーションの設定 */
 
 .slick-dots {
 	position: relative;
@@ -82,3 +84,35 @@
 .slick-dots .slick-active button{
     background:#333;/*ドットボタンの現在地表示の色*/
 }
+
+ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	color: #fff;
+}
+
+a:hover,
+a:active{
+	text-decoration: none;
+}
+
+h1{
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size:6vw;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.wrapper{
+	position: relative;
+}
+

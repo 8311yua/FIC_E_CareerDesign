@@ -7,6 +7,9 @@ menu.php                →現メニュー
 store.html              →開店開店時間マップの表示
 server.php              →データベース接続
 reseavation.html        →(未使用)
+styles.css              →bootstrap
+mystyle.css             →スライダー
+
 
 フォルダ名       →役割
 assets          →画像ファイル
@@ -14,6 +17,7 @@ css             →css
 js              →js
 login           →ログイン機能すべて
 seat            →席予約
+
 
 ～～～～～～すること～～～～～～
 ・ログイン用SQLとpan.sqlを接続
