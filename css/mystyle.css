@@ -16,11 +16,15 @@
 }
 
 .slider-item02 {
-    background:url(../assets/images/Strawberry-Tarts.png);
+    background:url(../assets/images/チョコ３.png);
 }
 
 .slider-item03 {
     background:url(../assets/images/チョコタルト2.jpg);
+}
+
+.slider-item04 {
+    background:url(../assets/images/フレンチトースト.jpg);
 }
 
 .slider-item {
@@ -91,6 +95,35 @@ ul{
 	list-style: none;
 }
 
+.ul-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    list-style: none;
+}
+
+.li-nav{
+    width: 25%;
+    border-left: 1px solid #ffe32b;
+}
+.li-nav:last-child{
+    border-right: 1px solid #ffe32b;
+}
+li a {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6;
+}
+li a span {
+    color: #ffe32b;
+    font-size: 13px;
+}
 a{
 	color: #fff;
 }
@@ -117,8 +150,8 @@ h1{
 }
 
 .heading {
-    -webkit-text-stroke: 3px #555;
-    text-shadow: 4px 4px 0 #e5c046;
+    -webkit-text-stroke: 3px #000000;
+    text-shadow: 4px 4px 0 #ffe32b;
     color: rgba(0 0 0 / 0);
     font-style: italic;
     
