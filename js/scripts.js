@@ -8,3 +8,8 @@ window.addEventListener('DOMContentLoaded', event => {
     const listHoursArray = document.body.querySelectorAll('.list-hours li');
     listHoursArray[new Date().getDay()].classList.add(('today'));
 })
+function getId(ele){
+    var id_value = ele.id; // eleのプロパティとしてidを取得
+    console.log(id_value); //「id01」
+    alert('カートに追加しました。');
+}
