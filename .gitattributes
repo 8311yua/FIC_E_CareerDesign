@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-# Auto detect text files and perform LF normalization
-* text=auto
-ホーム画面      〇index
-メニュー一覧    〇list
-予約画面(商品)  
-        →新規、既存のログイン(DB)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        ※クーポンなどを配るとなると、各個人で管理しなければならないため
-お店の情報(地図)store
-=======
 ここに簡単に現在のファイル名と役割を記載しておきます。
->>>>>>> e9b94740ef8324a6a1ec49baabaa9448a2ffd382
 
 ファイル名               →役割
 index.html              →ホーム
@@ -23,21 +10,6 @@ reseavation.html        →(未使用)
 styles.css              →bootstrap
 mystyle.css             →スライダー
 
-<<<<<<< HEAD
-<大西>メニューの一覧作成
->>>>>>> Stashed changes
-=======
-座席予約
-2人席
-4人席
-カウンター
->>>>>>> 89624cf1c23b299e9649adb2b5cd5c92ef0305da
-=======
-お店の情報(地図)store
-
-<大西>メニューの一覧作成
->>>>>>> Stashed changes
-=======
 
 フォルダ名       →役割
 assets          →画像ファイル
@@ -58,4 +30,3 @@ seat            →席予約
 
 Q,なぜログインさせるのか
 A,クーポンなどを配るとなると、各個人で管理しなければならないため
->>>>>>> e9b94740ef8324a6a1ec49baabaa9448a2ffd382

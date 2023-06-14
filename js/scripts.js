@@ -8,13 +8,6 @@ window.addEventListener('DOMContentLoaded', event => {
     const listHoursArray = document.body.querySelectorAll('.list-hours li');
     listHoursArray[new Date().getDay()].classList.add(('today'));
 })
-<<<<<<< HEAD
-function getId(ele){
-    var id_value = ele.id; // eleのプロパティとしてidを取得
-    console.log(id_value); //「id01」
-    alert('カートに追加しました。');
-}
-=======
 $('.slider').slick({
     autoplay: true,//自動的に動き出すか。初期値はfalse。
     autoplaySpeed: 3000,//次のスライドに切り替わる待ち時間
@@ -35,4 +28,3 @@ $('.slider').slick({
 $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
 $('.slider').slick('slickPlay');
 });
->>>>>>> e9b94740ef8324a6a1ec49baabaa9448a2ffd382
