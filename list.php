@@ -1,4 +1,4 @@
-<!-- どなたか、cssなどいじって、文字の位置サイズを変えていただけると嬉しいです。 -->
+<!--元ログインしないでも見れるメニュー一覧-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        
         <title>Shitamichi's Bakery</title>
         <link rel="icon" type="image/x-icon" href="assets/images/logo2.png" />
         <!-- Font Awesome icons (free version)-->

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Auto detect text files and perform LF normalization
 * text=auto
 ホーム画面      〇index
@@ -8,11 +9,21 @@
 <<<<<<< Updated upstream
         ※クーポンなどを配るとなると、各個人で管理しなければならないため
 お店の情報(地図)store
+=======
+ここに簡単に現在のファイル名と役割を記載しておきます。
+>>>>>>> e9b94740ef8324a6a1ec49baabaa9448a2ffd382
+
+ファイル名               →役割
+index.html              →ホーム
+list.php                →元メニュー(使うかわからん)
+menu.php                →現メニュー
+store.html              →開店開店時間マップの表示
+server.php              →データベース接続
+reseavation.html        →(未使用)
+styles.css              →bootstrap
+mystyle.css             →スライダー
 
 <<<<<<< HEAD
-=======
-お店の情報(地図)store
-
 <大西>メニューの一覧作成
 >>>>>>> Stashed changes
 =======
@@ -26,3 +37,25 @@
 
 <大西>メニューの一覧作成
 >>>>>>> Stashed changes
+=======
+
+フォルダ名       →役割
+assets          →画像ファイル
+css             →css
+js              →js
+login           →ログイン機能すべて
+seat            →席予約
+
+
+～～～～～～すること～～～～～～
+・ログイン用SQLとpan.sqlを接続
+・予約サイト
+・座席予約
+・予約サイト作成後、リンクの接続
+※以下随時記載
+～～～～～～～～～～～～～～～～
+
+
+Q,なぜログインさせるのか
+A,クーポンなどを配るとなると、各個人で管理しなければならないため
+>>>>>>> e9b94740ef8324a6a1ec49baabaa9448a2ffd382
