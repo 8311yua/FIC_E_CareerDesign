@@ -6,34 +6,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <!-- ページタイトル　＆　ページアイコン -->
+        <!-- タイトル -->
         <title>Shitamichi's Bakery</title>
         <link rel="icon" type="image/x-icon" href="assets/images/logo2.png" />
-        <!-- Font Awesome icons (free version)-->
+        <!-- icons-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- fonts-->
+        <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-        <!-- CSS -->
-        <link href="css/styles.css" rel="stylesheet">
-        <link href="css/test.css"   rel="stylesheet">
-        <link href="css/photograph.css"   rel="stylesheet">
+        <!-- CSS-->
+        <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css"> -->
+
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     </head>
-    
-    <!-- メイン -->
-    <body>
-        <header>
-            <div class="wrapper">
-                <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                    <span class="site-heading-upper text-primary mb-3">
-                        <img style="width: 10%;" src="assets/images/logo4.png" alt="..." />
-                    </span>
-                    <span class="site-heading-lower">Shitamichi's Bakery</span>
-                    <!-- ↓　index.htmlに飛ぶリンクあり -->
-                    <!-- <span class="site-heading-lower"><a class="nav-link text-uppercase" href="index.html">Shitamichi's Bakery</a></span> -->
-                </h1>
-            </div>
-        </header>
+    <header>
+        <div class="wrapper">
+            <h1 class="heading site-heading text-center text-faded d-none d-lg-block">Shitamichi's Bakery</h1>
+                <!-- <span class="site-heading-upper text-primary mb-3">
+                    <img style="width: 10%;" src="assets/images/logo4.png" alt="..." />
+                </span> -->
+                <!-- <span class="site-heading-lower">Shitamichi's Bakery</span><br>
+                <span class="site-heading-lower" style="font-size: 50%;">思わず笑顔になるおいしいコーヒーを提供しています。<br>クッキーやクロワッサン、タルトやケーキなどのお菓子と一緒にいかがでしょうか。</span>
+                -->
+                    <ul class="slider">
+                    <li class="slider-item slider-item01"></li>
+                    <li class="slider-item slider-item02"></li>
+                    <li class="slider-item slider-item03"></li>
+                    <li class="slider-item slider-item04"></li>
+                </ul>
+            
+        </div>
+    </header>
         <!-- データベース -->
         <?php require 'server.php' ?>
         <!-- Navigation-->
