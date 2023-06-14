@@ -116,3 +116,10 @@ h1{
 	position: relative;
 }
 
+.heading {
+    -webkit-text-stroke: 3px #555;
+    text-shadow: 4px 4px 0 #e5c046;
+    color: rgba(0 0 0 / 0);
+    font-style: italic;
+    
+}
