@@ -1,3 +1,4 @@
+<!-- 夏季課題のほう -->
 <!DOCTYPE htmel>
 <html lang="ja">
 <head>
@@ -10,13 +11,6 @@
     <link rel="stylesheet" href="login2.css">
 </head>
 <body>
-    <div class="slider">
-        <div class="slider-inner">
-            <div class="slider-item"><img src="assets\img\bg.jpg"></div>
-            <div class="slider-item"><img src="assets\img\about.jpg"></div>
-            <div class="slider-item"><img src="assets\img\products-01.jpg"></div>
-        </div>
-    </div>
     <div class="login-wrap">
     <div class="login-html">
     <?php
@@ -84,7 +78,7 @@
         print  $staff_name;
         print 'さん';
         print '<br>';
-        print '<form action="login-input.php" method="post">';
+        print '<form action="login_input.php" method="post">';
         print '<input type="submit" value="ログイン画面へ戻る" class="button">';
         print '</form>';
     }} else {
@@ -97,44 +91,5 @@
     ?>
     </div>
 </div>
-
-<style>
-
-.slider {
-  width: 300px;
-   height: 200px;
-   overflow: hidden;
-   margin: 0 auto;
-
-}
-.slider-item {
-  width: 300px;
-  float: left;
-}
-img{
-  width:100%;
-}
-.slider-inner {
-  width: 300%;
-  animation: slider 10s infinite ease;
-}
-
-@keyframes slider {
-	0% {
-	transform: translateX(0);
-	}
-	33% {
-	transform: translateX(-300px);
-	}
-	66% {
-	transform: translateX(-600px);
-	}
-	100% {
-	transform: translateX(0);
-	}
-}
-
-
-</style>
 </body>
 </html>
