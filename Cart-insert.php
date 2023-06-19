@@ -25,6 +25,7 @@
         <link href="css/mystyle.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
+    <?php require 'server.php' ?>
         <?php
         $id=$_REQUEST['id'];
         if(!isset($_SESSION['Food'])){

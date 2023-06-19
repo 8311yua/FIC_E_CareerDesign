@@ -1,4 +1,6 @@
+<?php require 'server.php' ?>
 <?php
+
 if(!empty($_SESSION['Food'])){
     echo'<table>';
     echo'<th>商品番号</th><th>商品名</th>';
