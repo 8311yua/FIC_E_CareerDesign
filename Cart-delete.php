@@ -35,23 +35,10 @@
             </div>
         </nav>
         <?php session_start(); ?>
-        <?php require 'server.php' ?>
         <?php
-        $id=$_REQUEST['id'];
-        if(!isset($_SESSION['Food'])){
-            $_SESSION['Food']=[];
-        }
-        $count=0;
-        if(isset($_SESSION['Food'][$id])){
-            $count=$_SESSION['Food'][$id]['count'];
-        }
-        $_SESSION['Food'][$id]=[
-            'name'=>$_REQUEST['name'],
-            'price'=>$_REQUEST['price'],
-            'count'=>$count+$_REQUEST['count']
-        ];
-        echo'<p>カートに商品を追加しました。</p>';
-        echo'<hr>';
+        unset($_SESSION['Food'][$_REQUEST['id']]);
+        echo 'カートから商品を削除しました。';
+        echo '<hr>';
         require 'Cart.php';
         ?>
     </body>

@@ -21,6 +21,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/mystyle.css" rel="stylesheet" type="text/css" >
     </head>
+    <body>
+
         <section class="product spad">
             <div class="container">
                 <div class="col-xl-9 col-lg-10 mx-auto">
@@ -30,9 +32,8 @@
                             <?php
                             $sql=$pdo -> prepare('select * from Food where id=?');
                             $sql->execute([$_REQUEST['id']]);
-                            // Navigation
                             foreach($sql as $row){
-                                echo'<form action="Cart-insert.php method="post">';
+                                echo'<form action="Cart-insert.php" method="post">';
                                 echo'<p>商品番号:',$row['id'],'</p>';
                                 echo'<p>商品名:',$row['name'],'</p>';
                                 echo'<p>価格:',$row['price'],'</p>';
@@ -48,6 +49,7 @@
                                 echo'</form>';
                             }
                             ?>
+                            <a href="menu.php">一覧に戻る</a>
                         </div>
                     </div>
                 </div>
