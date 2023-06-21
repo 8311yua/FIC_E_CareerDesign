@@ -98,5 +98,6 @@
                 </div>
             </div>
         </section>
+        <script src="js/myjs.js"></script>
     </body>
 </html>
