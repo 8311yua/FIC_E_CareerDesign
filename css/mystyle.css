@@ -12,19 +12,19 @@
 /*　背景画像設定　*/
 
 .slider-item01 {
-    background:url(../assets/images/パンケーキ.jpg);
+    background:linear-gradient(rgba(232, 211, 199, 0.65), rgba(232, 173, 139, 0.65)),url(../assets/images/パンケーキ.jpg);
 }
 
 .slider-item02 {
-    background:url(../assets/images/チョコ３.png);
+    background:linear-gradient(rgba(232, 211, 199, 0.65), rgba(232, 173, 139, 0.65)),url(../assets/images/チョコ３.png);
 }
 
 .slider-item03 {
-    background:url(../assets/images/チョコタルト2.jpg);
+    background:linear-gradient(rgba(232, 211, 199, 0.65), rgba(232, 173, 139, 0.65)),url(../assets/images/チョコタルト2.jpg);
 }
 
 .slider-item04 {
-    background:url(../assets/images/フレンチトースト.jpg);
+    background:linear-gradient(rgba(232, 211, 199, 0.65), rgba(232, 173, 139, 0.65)),url(../assets/images/フレンチトースト.jpg);
 }
 
 .slider-item {
@@ -104,10 +104,10 @@ ul{
 
 .li-nav{
     width: 25%;
-    border-left: 1px solid #ffe32b;
+    border-left: 1px solid #946243;
 }
 .li-nav:last-child{
-    border-right: 1px solid #ffe32b;
+    border-right: 1px solid #946243;
 }
 li a {
     display: flex;
@@ -121,7 +121,7 @@ li a {
     line-height: 1.6;
 }
 li a span {
-    color: #ffe32b;
+    color: #946243;
     font-size: 13px;
 }
 a{
@@ -150,9 +150,9 @@ h1{
 }
 
 .heading {
-    -webkit-text-stroke: 3px #000000;
-    text-shadow: 4px 4px 0 #ffe32b;
-    color: rgba(0 0 0 / 0);
+    -webkit-text-stroke: 3px #ffffff;
+    text-shadow: 6px 6px 0 #7b5136;
+    color: rgb(255, 252, 252);
     font-style: italic;
     
 }
