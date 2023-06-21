@@ -5,16 +5,15 @@ index.html              →ホーム
 list.php                →元メニュー(使うかわからん)
 store.html              →開店開店時間マップの表示(おそらくもう使わない)
 server.php              →データベース接続
-reseavation.html        →(未使用)
 styles.css              →bootstrap
 mystyle.css             →スライダー
 menu.php                →現メニュー
 Food.php                →Food詳細,カート追加ページ(idにより、名前,写真,値段が変わる)
 Drink.php               →Drink詳細ページ(現在カート追加不可)
-Cart.php                →
+Cart.php                →商品予約一覧(商品の有無の確認もあり)
 Cart-show.php           →商品予約一覧
-Cart-insert.php         →
-Cart-delete.php         →
+Cart-insert.php         →商品予約一覧＋商品追加完了の文表示
+Cart-delete.php         →商品予約一覧＋商品削除完了の文表示
 
 
 フォルダ名       →役割
@@ -31,6 +30,16 @@ seat            →席予約
 ・座席予約
 ・予約サイト作成後、リンクの接続
 ※以下随時記載
+
+現在(6/21)
+foodのカート追加は完了
+drinkのカート追加未完(仕方分からん)
+
+カート追加からの購入部分未完
+
+アカウントとの連携未完
+
+カートや、foodなどのページのCSS
 ～～～～～～～～～～～～～～～～
 
 
