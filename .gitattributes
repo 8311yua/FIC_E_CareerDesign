@@ -3,12 +3,18 @@
 ファイル名               →役割
 index.html              →ホーム
 list.php                →元メニュー(使うかわからん)
-menu.php                →現メニュー
-store.html              →開店開店時間マップの表示
+store.html              →開店開店時間マップの表示(おそらくもう使わない)
 server.php              →データベース接続
 reseavation.html        →(未使用)
 styles.css              →bootstrap
 mystyle.css             →スライダー
+menu.php                →現メニュー
+Food.php                →Food詳細,カート追加ページ(idにより、名前,写真,値段が変わる)
+Drink.php               →Drink詳細ページ(現在カート追加不可)
+Cart.php                →
+Cart-show.php           →商品予約一覧
+Cart-insert.php         →
+Cart-delete.php         →
 
 
 フォルダ名       →役割
