@@ -1,4 +1,6 @@
 <!-- 現メニュー一覧 -->
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,7 +10,7 @@
         <meta name="author" content="" />
         <!-- タイトル -->
         <title>Shitamichi's Bakery</title>
-        <link rel="icon" type="image/x-icon" href="assets/images/logo2.png" />
+        <link rel="icon" type="image/x-icon" href="../assets/images/logo2.png" />
         <!-- icons-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -31,7 +33,7 @@
                 <!-- <span class="site-heading-lower">Shitamichi's Bakery</span><br>
                 <span class="site-heading-lower" style="font-size: 50%;">思わず笑顔になるおいしいコーヒーを提供しています。<br>クッキーやクロワッサン、タルトやケーキなどのお菓子と一緒にいかがでしょうか。</span>
                 -->
-                    <ul class="slider">
+                <ul class="slider">
                     <li class="slider-item slider-item01"></li>
                     <li class="slider-item slider-item02"></li>
                     <li class="slider-item slider-item03"></li>
@@ -49,8 +51,8 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="test.php#food">food</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="test.php#drink">drink</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="menu_test.php#food">food</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="menu_test.php#drink">drink</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,13 +65,13 @@
                         <h2 id="food">Food</h2>
                         <div class="row">                    
                             <?php
-                            foreach($pdo->query('select * from Food') as $row){
+                            foreach($pdo->query('select * from food') as $row){
                                 $id = $row['id'];
                                 echo '<div class="col-lg-4 col-md-6 col-sm-6">';
                                 echo '<div class="product__item"><tr>';
-                                echo '<img src="','assets/images/',$row['image'],'"class="product__item__pic">';
+                                // echo '<img src="','assets/images/',$row['image'],'"class="product__item__pic">';
                                 echo '<div class="product__item__text">';
-                                echo '<h5><a href="test.php?id=',$id,'">',$row['name'],'</a></h5>';
+                                echo '<h5><a href="Food.php?id=',$id,'">',$row['name'],'</a></h5>';
                                 echo '<h5>','¥', $row['price'], '</h5>';
                                 echo '</div>';
                                 echo '</div>';
@@ -82,11 +84,12 @@
                         <div class="row">
                             <?php
                             foreach($pdo->query('select * from drink') as $row){
+                                $id = $row['id'];
                                 echo '<div class="col-lg-4 col-md-6 col-sm-6">';
                                 echo '<div class="product__item"><tr>';
-                                echo '<img src="','assets/images/',$row['image'],'"class="product__item__pic">';
+                                // echo '<img src="','assets/images/',$row['image'],'"class="product__item__pic">';
                                 echo '<div class="product__item__text">';
-                                echo '<h5><a href="test.php?id=',$id,'">',$row['name'],'</a></h5>';
+                                echo '<h5><a href="Drink.php?id=',$id,'">',$row['name'],'</a></h5>';
                                 echo '<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5>';
                                 echo '</div>';
                                 echo '</div>';
