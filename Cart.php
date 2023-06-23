@@ -21,6 +21,7 @@
                             echo'<td><a href="Cart-delete.php?id=', $id, '">削除</a></td>';
                             echo'</tr>';
                         }
+                        
                         echo'<tr><td>合計</td><td></td><td></td><td></td><td>',$total,'</td><td></td></tr>';
                         echo'</table>';
                     }else{
