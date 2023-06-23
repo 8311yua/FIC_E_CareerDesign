@@ -38,7 +38,14 @@
                                 echo'<form action="Cart-insert.php" method="post">';
                                 echo'<p>商品番号:',$row['id'],'</p>';
                                 echo'<p>商品名:',$row['name'],'</p>';
-                                echo'<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5>';
+                                // 
+                                echo'サイズ<br>';
+                                echo'<input type="radio" name="price" value="',$row['prices'],'">S　　　　　￥', $row['prices'],'<br>';
+                                echo'<input type="radio" name="price" value="',$row['pricem'],'">M　　　　　￥', $row['pricem'],'<br>';
+                                echo'<input type="radio" name="price" value="',$row['pricel'],'">L　　　　　￥', $row['pricel'],'<br>';
+                                echo'<br>';
+
+                                // 
                                 echo'<p>個数:<select name="count">';
                                 for ($i=1; $i<=10; $i++){
                                     echo '<option value="',$i,'">',$i,'</option>';
@@ -47,11 +54,11 @@
                                 echo'<input type="hidden" name="id" value="',$row['id'],'">';
                                 echo'<input type="hidden" name="name" value="',$row['name'],'">';
                                 
-                                echo'<input type="hidden" name="price" value="',$row['prices'],'">';
                                 echo'<p><input type="submit" value="カートに追加"></p>';
                                 echo'</form>';
                             }
                             ?>
+                            <a href="menu.php">一覧に戻る</a>
                         </div>
                     </div>
                 </div>
