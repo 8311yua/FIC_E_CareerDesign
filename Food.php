@@ -34,7 +34,7 @@
                             $sql->execute([$_REQUEST['id']]);
                             foreach($sql as $row){
                                 echo'<form action="Cart-insert.php" method="post">';
-                                echo'<p>商品番号:',$row['id'],'</p>';
+                                // echo'<p>商品番号:',$row['id'],'</p>';
                                 echo'<p>商品名:',$row['name'],'</p>';
                                 echo'<p>価格:',$row['price'],'</p>';
                                 echo'<p>個数:<select name="count">';

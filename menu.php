@@ -7,6 +7,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <!-- タイトル -->
+        
         <title>Shitamichi's Bakery</title>
         <link rel="icon" type="image/x-icon" href="../assets/images/logo2.png" />
         <!-- icons-->
@@ -81,7 +82,7 @@
                                 $id = $row['id'];
                                 echo '<div class="col-lg-4 col-md-6 col-sm-6">';
                                 echo '<div class="product__item"><tr>';
-                                echo '<img src="','assets/images/food/',$row['image'],'"class="product__item__pic">';
+                                echo '<a href="Food.php?id=', $id,'"><div class="product__item__pic set-bg"><img src="','assets/images/food/',$row['image'],'"class="product__item__pic"></div></a>';
                                 echo '<div class="product__item__text">';
                                 echo '<h5><a href="Food.php?id=',$id,'">',$row['name'],'</a></h5>';
                                 echo '<h5>','¥', $row['price'], '</h5>';
@@ -99,7 +100,7 @@
                                 $id = $row['id'];
                                 echo '<div class="col-lg-4 col-md-6 col-sm-6">';
                                 echo '<div class="product__item"><tr>';
-                                echo '<img src="','assets/images/drink/',$row['image'],'"class="product__item__pic">';
+                                echo '<a href="Drink.php?id=', $id,'"><div class="product__item__pic set-bg"><img src="','assets/images/drink/',$row['image'],'"class="product__item__pic"></div></a>';
                                 echo '<div class="product__item__text">';
                                 echo '<h5><a href="Drink.php?id=',$id,'">',$row['name'],'</a></h5>';
                                 echo '<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5>';
