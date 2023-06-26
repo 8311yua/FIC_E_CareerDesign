@@ -99,7 +99,7 @@ ul{
     display: flex;
     justify-content: space-between;
     width: 800px;
-    
+    list-style: none;
 }
 
 .li-nav{
@@ -155,13 +155,4 @@ h1{
     color: rgb(255, 252, 252);
     font-style: italic;
     
-}
-.site-header{
-    background: rgba(255, 255, 255, 0.587);
-    display: flex;
-    padding: 20px;
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 999;
 }
