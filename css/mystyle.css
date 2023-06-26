@@ -156,3 +156,13 @@ h1{
     font-style: italic;
     
 }
+.site-header{
+    background: rgba(255, 255, 255, 0.587);
+    top: 0;
+    display: flex;
+    padding-left: 20px;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 999;
+}
