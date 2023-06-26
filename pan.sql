@@ -18,6 +18,14 @@ create table drink (
 	pricem int not null,
 	pricel int not null
 );
+
+CREATE TABLE `customer` (
+    customer_id int(11) auto_increment primary key,
+    customer_name varchar(200) NOT NULL,
+    password varchar(200) NOT NULL,
+    address varchar(200) NOT NULL
+);
+
 INSERT INTO food (`id`, `name`,`image`, `price`) VALUES
 (1, 'クッキー\r\n','Cookie.jpg', 120),
 (2, 'クロワッサン\r\n','Croissant.jpg', 200),
@@ -45,3 +53,7 @@ INSERT INTO drink (`id`,`name`,`image`,`prices`,`pricem`,`pricel`) VALUES
 (21, 'ココア','Cocoa.jpg', 400,450,500),
 (22, 'ホットチョコ','HotChocolate.jpg', 400,450,500),
 (23, 'オレンジジュース','OrangeJuice.jpg',250,300,350);
+
+INSERT INTO `customer` (`customer_id`, `customer_name`, `password`, `address`) VALUES
+(1, 'test', 'aa111111', 'aa@aaaa'),
+(2, 'test_2', 'aa111111', 'aa@aaa');

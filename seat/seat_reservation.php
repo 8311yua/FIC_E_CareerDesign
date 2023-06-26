@@ -51,12 +51,14 @@
             </select><br>
             </div>
             <div class="seat">
+            <?php require '../server.php' ?>
             <?php
-            $dsn = 'mysql:dbname=reserve_bakery;host=localhost;charset=utf8';
-            $user = 'discipline';
-            $password = 'tr_2146';
+            // $dsn = 'mysql:dbname=reserve_bakery;host=localhost;charset=utf8';
+            // $user = 'discipline';
+            // $password = 'tr_2146';
 
-            $pdo=new PDO($dsn, $user, $password);
+            // $pdo=new PDO($dsn, $user, $password);
+            
 
             $sql = 'SELECT * FROM seat_reservation';
             $stmt = $pdo->prepare($sql);
