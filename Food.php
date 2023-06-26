@@ -21,45 +21,56 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/photograph.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-
     </head>
+
+    <!-- 商品詳細 -->
     <body>
         <br><br><br>
         <section class="product spad">
             <div class="col-xl-9 col-lg-10 mx-auto">
                 <div class="container">
                     <div class="bg-faded rounded p-5">
-                        <div class="row">                             
-                                <?php require 'server.php' ?>
-                                <?php
-                                $sql=$pdo -> prepare('select * from Food where id=?');
-                                $sql->execute([$_REQUEST['id']]);
-                                foreach($sql as $row){
-                                    echo'<form action="Cart-insert.php" method="post">';
-                                    echo '<center><a href="Food.php?id=', $id,'"><div class="product__item__pic set-bg"><img src="','assets/images/food/',$row['image'],'"class="product__item__pic"></div></a></center><br>';
-                                    echo'<div class="left_yohaku">';
-                                    // echo'<p>商品番号:',$row['id'],'</p>';
-                                    echo'<h3>',$row['name'],'　　￥',$row['price'],'</h3>';
-                                    // echo'<h3>￥',$row['price'],'</h3>';
-                                    echo'<h3>個数 : <select name="count" class="option_color frame_black"></h3>';
-                                    // 
-                                    for ($i=1; $i<=10; $i++){
-                                        echo '<div class="option_color"><option value="',$i,'">',$i,'</option></div>';
-                                    }
-                                    echo'</select></p>';
-                                    echo'<input type="hidden" name="id" value="',$row['id'],'">';
-                                    echo'<input type="hidden" name="name" value="',$row['name'],'">';
-                                    echo'<input type="hidden" name="price" value="',$row['price'],'">';
-                                    echo'<p class="hover_color"><input type="submit" value="カートに追加"></p>';
-                                    echo'</form>';
-                                    echo'</div>';
+                        <!-- 商品詳細処理 -->
+                        <div class="row">     
+                            <!-- SQLの接続 -->
+                            <?php require 'server.php' ?>
+                            
+                            <?php
+                            $sql=$pdo -> prepare('select * from Food where id=?');
+                            $sql->execute([$_REQUEST['id']]);
+                            foreach($sql as $row){
+                                echo'<form action="Cart-insert.php" method="post">';
+                                // 下記で画像の表示
+                                echo '<center><a href="Food.php?id=', $id,'"><div class="product__item__pic set-bg"><img src="','assets/images/food/',$row['image'],'"class="product__item__pic"></div></a></center><br>';
+                                echo'<div class="left_yohaku">';
+                                // 商品名、値段の表示
+                                echo'<h3>',$row['name'],'　　￥',$row['price'],'</h3>';
+                                // echo'<h3>￥',$row['price'],'</h3>';
+
+                                // 個数の表示
+                                echo'<h3>個数 : <select name="count" class="option_color frame_black"></h3>';
+                                // 個数の処理(forで処理)
+                                for ($i=1; $i<=10; $i++){
+                                    echo '<div class="option_color"><option value="',$i,'">',$i,'</option></div>';
                                 }
-                                ?>
-                                <a href="menu.php">一覧に戻る</a>
+                                echo'</select></p>';
+
+                                // 下記でpostでcartに送っている
+                                echo'<input type="hidden" name="id" value="',$row['id'],'">';
+                                echo'<input type="hidden" name="name" value="',$row['name'],'">';
+                                echo'<input type="hidden" name="price" value="',$row['price'],'">';
+                                echo'<p class="hover_color"><input type="submit" value="カートに追加"></p>';
+                                echo'</form>';
+                                echo'</div>';
+                            }
+                            ?>
+                            <a href="menu.php">一覧に戻る</a>
                         </div>
+                        <!-- 商品詳細処理終了 -->
                     </div>
                 </div>
             </div>
         </section>
     </body>
+    <!-- 商品詳細終了 -->
 </html>
