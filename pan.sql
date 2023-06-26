@@ -26,6 +26,28 @@ CREATE TABLE `customer` (
     address varchar(200) NOT NULL
 );
 
+create table purchase (
+    id int not null primary key,
+    customer_id int not null,
+    foreign key(customer_id) references customer(customer_id)
+);
+
+-- カートに追加でinputさせるためのテーブル
+-- カートからの削除でテーブルから消す
+create table product (
+	castomer_id int(11) not null,	--外部キーで顧客のIDを取得
+	product_id int(200) not null,	--商品IDをinput
+	price int(200) not null,		--単価を”
+	count int(200) not null,		--個数を”
+	foreign key(castomer_id) references customer(customer_id)
+);
+
+create table product (
+	castomer_id int(11) not null,	--外部キーで顧客のIDを取得
+	foreign key(castomer_id) references customer(customer_id)
+);
+
+
 INSERT INTO food (`id`, `name`,`image`, `price`) VALUES
 (1, 'クッキー\r\n','Cookie.jpg', 120),
 (2, 'クロワッサン\r\n','Croissant.jpg', 200),
