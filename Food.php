@@ -18,9 +18,10 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css"> -->
 
+        <!-- 自作CSS -->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/photograph.css" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+        <link href="css/mystyle.css" rel="stylesheet">
     </head>
 
     <!-- 商品詳細 -->
@@ -34,14 +35,14 @@
                         <div class="row">     
                             <!-- SQLの接続 -->
                             <?php require 'server.php' ?>
-                            
                             <?php
                             $sql=$pdo -> prepare('select * from Food where id=?');
                             $sql->execute([$_REQUEST['id']]);
                             foreach($sql as $row){
                                 echo'<form action="Cart-insert.php" method="post">';
                                 // 下記で画像の表示
-                                echo '<center><a href="Food.php?id=', $id,'"><div class="product__item__pic set-bg"><img src="','assets/images/food/',$row['image'],'"class="product__item__pic"></div></a></center><br>';
+                                // echo '<center><div class="product__item__pic set-bg"><img src="','assets/images/food/',$row['image'],'"class="product__item__pic"></div></center><br>';
+                                echo '<center><img src="assets/images/food/',$row['image'],'" class="product__item__pic"></center><br>';
                                 echo'<div class="left_yohaku">';
                                 // 商品名、値段の表示
                                 echo'<h3>',$row['name'],'　　￥',$row['price'],'</h3>';
@@ -64,7 +65,7 @@
                                 echo'</div>';
                             }
                             ?>
-                            <a href="menu.php">一覧に戻る</a>
+                            <a href="menu.php" class="hover_color">一覧に戻る</a>
                         </div>
                         <!-- 商品詳細処理終了 -->
                     </div>

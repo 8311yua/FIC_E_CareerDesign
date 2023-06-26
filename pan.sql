@@ -32,18 +32,17 @@ create table purchase (
     foreign key(customer_id) references customer(customer_id)
 );
 
--- カートに追加でinputさせるためのテーブル
--- カートからの削除でテーブルから消す
+
 create table product (
-	castomer_id int(11) not null,	--外部キーで顧客のIDを取得
-	product_id int(200) not null,	--商品IDをinput
-	price int(200) not null,		--単価を”
-	count int(200) not null,		--個数を”
+	castomer_id int(11) not null,	
+	product_id int(200) not null,	
+	price int(200) not null,		
+	count int(200) not null,		
 	foreign key(castomer_id) references customer(customer_id)
 );
 
 create table product (
-	castomer_id int(11) not null,	--外部キーで顧客のIDを取得
+	castomer_id int(11) not null,	
 	foreign key(castomer_id) references customer(customer_id)
 );
 
@@ -79,3 +78,14 @@ INSERT INTO drink (`id`,`name`,`image`,`prices`,`pricem`,`pricel`) VALUES
 INSERT INTO `customer` (`customer_id`, `customer_name`, `password`, `address`) VALUES
 (1, 'test', 'aa111111', 'aa@aaaa'),
 (2, 'test_2', 'aa111111', 'aa@aaa');
+
+-- カートに追加でinputさせるためのテーブル
+-- product
+--外部キーで顧客のIDを取得
+--商品IDをinput
+--単価を”
+--個数を”
+
+
+
+--外部キーで顧客のIDを取得

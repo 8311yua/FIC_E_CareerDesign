@@ -18,13 +18,14 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css"> -->
 
+        <!-- 自作CSS -->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/mystyle.css" rel="stylesheet" type="text/css" >
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none " href="index.php">Shitamichi's Bakery</a>
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none " href="index.html">Shitamichi's Bakery</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto ul-nav">
