@@ -19,37 +19,43 @@
         <!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css"> -->
 
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/mystyle.css" rel="stylesheet" type="text/css" >
+        <link href="css/photograph.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
     </head>
     <body>
-
+        <br><br><br>
         <section class="product spad">
-            <div class="container">
-                <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+                <div class="container">
                     <div class="bg-faded rounded p-5">
-                        <div class="row"> 
-                            <?php require 'server.php' ?>
-                            <?php
-                            $sql=$pdo -> prepare('select * from Food where id=?');
-                            $sql->execute([$_REQUEST['id']]);
-                            foreach($sql as $row){
-                                echo'<form action="Cart-insert.php" method="post">';
-                                // echo'<p>商品番号:',$row['id'],'</p>';
-                                echo'<p>商品名:',$row['name'],'</p>';
-                                echo'<p>価格:',$row['price'],'</p>';
-                                echo'<p>個数:<select name="count">';
-                                for ($i=1; $i<=10; $i++){
-                                    echo '<option value="',$i,'">',$i,'</option>';
+                        <div class="row">                             
+                                <?php require 'server.php' ?>
+                                <?php
+                                $sql=$pdo -> prepare('select * from Food where id=?');
+                                $sql->execute([$_REQUEST['id']]);
+                                foreach($sql as $row){
+                                    echo'<form action="Cart-insert.php" method="post">';
+                                    echo '<center><a href="Food.php?id=', $id,'"><div class="product__item__pic set-bg"><img src="','assets/images/food/',$row['image'],'"class="product__item__pic"></div></a></center><br>';
+                                    echo'<div class="left_yohaku">';
+                                    // echo'<p>商品番号:',$row['id'],'</p>';
+                                    echo'<h3>',$row['name'],'　　￥',$row['price'],'</h3>';
+                                    // echo'<h3>￥',$row['price'],'</h3>';
+                                    echo'<h3>個数 : <select name="count" class="option_color frame_black"></h3>';
+                                    // 
+                                    for ($i=1; $i<=10; $i++){
+                                        echo '<div class="option_color"><option value="',$i,'">',$i,'</option></div>';
+                                    }
+                                    echo'</select></p>';
+                                    echo'<input type="hidden" name="id" value="',$row['id'],'">';
+                                    echo'<input type="hidden" name="name" value="',$row['name'],'">';
+                                    echo'<input type="hidden" name="price" value="',$row['price'],'">';
+                                    echo'<p class="hover_color"><input type="submit" value="カートに追加"></p>';
+                                    echo'</form>';
+                                    echo'</div>';
                                 }
-                                echo'</select></p>';
-                                echo'<input type="hidden" name="id" value="',$row['id'],'">';
-                                echo'<input type="hidden" name="name" value="',$row['name'],'">';
-                                echo'<input type="hidden" name="price" value="',$row['price'],'">';
-                                echo'<p><input type="submit" value="カートに追加"></p>';
-                                echo'</form>';
-                            }
-                            ?>
-                            <a href="menu.php">一覧に戻る</a>
+                                ?>
+                                <a href="menu.php">一覧に戻る</a>
                         </div>
                     </div>
                 </div>

@@ -125,7 +125,7 @@ li a span {
     font-size: 13px;
 }
 a{
-	color: #fff;
+    color: #622a00;
 }
 
 a:hover,
@@ -155,14 +155,4 @@ h1{
     color: rgb(255, 252, 252);
     font-style: italic;
     
-}
-.site-header{
-    background: rgba(255, 255, 255, 0.587);
-    top: 0;
-    display: flex;
-    padding-left: 20px;
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 999;
 }

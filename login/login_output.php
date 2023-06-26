@@ -4,8 +4,10 @@
 <?php session_start();?>
 <?php
 unset($_SESSION['customer']);
-$pdo=new PDO('mysql:host=localhost;dbname=reserve_bakery;charset=utf8',
-    'discipline', 'tr_2146');
+// $pdo=new PDO('mysql:host=localhost;dbname=reserve_bakery;charset=utf8',
+//     'discipline', 'tr_2146');
+require '../server.php';
+
 $sql=$pdo->prepare('select * from customer where customer_name=? and password=?');
 $sql->execute([$_REQUEST['name'], $_REQUEST['password']]);
 foreach ($sql as $row) {
