@@ -11,22 +11,17 @@
         <!-- icons-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link
-            href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-            rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- CSS-->
-        <link rel="stylesheet" type="text/css"
-            href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+        <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css"> -->
-
         <!-- 自作CSS -->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/photograph.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     </head>
-
     <!-- スライド画像 -->
     <header>
         <div class="wrapper">
@@ -51,12 +46,10 @@
                     aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto ul-nav">
-                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase"
-                                href="index.html"><span>Home</span><br>ホーム</a></li>
-                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase"
-                                href="menu.php"><span>Menu</span><br>商品予約</a></li>
-                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase"
-                                href="seat/seat_reservation.php"><span>Reservation</span><br>座席予約</a></li>
+                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="index.html"><span>Home</span><br>ホーム</a></li>
+                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="menu.php"><span>Menu</span><br>商品予約</a></li>
+                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="seat/seat_reservation.php"><span>Reservation</span><br>座席予約</a></li>
+                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="Cart-show.php"><span>Reservation</span><br>カート一覧</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<form action="store.html">
+<form action="../index.html">
 <!DOCTYPE htmel>
 <html lang="ja">
 <head>
@@ -16,8 +16,7 @@
 if (!isset($_SESSION['customer'])) {
 	echo '予約するにはログインしてください。';
 } else {
-    $pdo=new PDO('mysql:host=localhost;dbname=reserve_bakery;charset=utf8',
-    'discipline', 'tr_2146');
+    require '../server.php';
     $id=$_SESSION['customer']['id'];
     $seat_type=$_POST["seat_type"];
     $num_people=$_POST["num_people"];

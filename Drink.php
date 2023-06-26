@@ -47,7 +47,7 @@
                                 echo'<h3>商品名:',$row['name'],'</h3>';
                                 // サイズ値段をラジオボタンで選択させる、選択されたpriceを送る
                                 echo'<h3>サイズ<br>';
-                                echo'<input type="radio" name="price" value="',$row['prices'],'">Sサイズ　　￥', $row['prices'],'<br>';
+                                echo'<input type="radio" name="price" checked value="',$row['prices'],'">Sサイズ　　￥', $row['prices'],'<br>';
                                 echo'<input type="radio" name="price" value="',$row['pricem'],'">Mサイズ　　￥', $row['pricem'],'<br>';
                                 echo'<input type="radio" name="price" value="',$row['pricel'],'">Lサイズ　　￥', $row['pricel'],'<br>';
                                 echo'<br></h3>';
