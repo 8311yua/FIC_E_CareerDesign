@@ -20,4 +20,3 @@ if ($sql->execute([$purchase_id, $_SESSION['customer']['id']])) {
 	echo '購入手続き中にエラーが発生しました。申し訳ございません。';
 }
 ?>
-<?php require '../footer.php'; ?>

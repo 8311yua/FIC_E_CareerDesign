@@ -22,28 +22,14 @@
         <link href="css/photograph.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     </head>
-    <!-- スライド画像 -->
-    <header>
-        <div class="wrapper">
-            <h1 class="heading site-heading text-center text-faded d-none d-lg-block">Shitamichi's Bakery</h1>
-            <ul class="slider">
-                <li class="slider-item slider-item01"></li>
-                <li class="slider-item slider-item02"></li>
-                <li class="slider-item slider-item03"></li>
-                <li class="slider-item slider-item04"></li>
-            </ul>
-        </div>
-    </header>
-    <!-- endスライド画像 -->
 
-    <body>
-        <!-- メニューバー -->
+    <header class="site-header">
+        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
+                <img style="width: 10%;" src="assets/images/logo.png" alt="..." />
                 <a class="navbar-brand text-uppercase fw-bold d-lg-none " href="index.html">Shitamichi's Bakery</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto ul-nav">
                         <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="index.html"><span>Home</span><br>ホーム</a></li>
@@ -54,8 +40,34 @@
                 </div>
             </div>
         </nav>
+    </header>
+    <!-- endスライド画像 -->
+
+    <body>
+        <!-- メニューバー -->
+        <div class="wrapper">
+            <h1 class="heading site-heading text-center text-faded d-none d-lg-block">Shitamichi's Bakery</h1>
+            <ul class="slider">
+                <li class="slider-item slider-item01"></li>
+                <li class="slider-item slider-item02"></li>
+                <li class="slider-item slider-item03"></li>
+                <li class="slider-item slider-item04"></li>
+            </ul>
+        </div>
         <!-- メニューバー終了 -->
 
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.php">Shitamichi's Bakery</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="menu.php#food">food</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="menu.php#drink">drink</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- 内部処理、下記データベースの接続 -->
         <?php require 'server.php' ?>
         <section class="product spad">

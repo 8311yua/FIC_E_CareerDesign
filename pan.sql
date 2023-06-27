@@ -41,10 +41,7 @@ create table product (
 	foreign key(castomer_id) references customer(customer_id)
 );
 
-create table product (
-	castomer_id int(11) not null,	
-	foreign key(castomer_id) references customer(customer_id)
-);
+
 
 
 INSERT INTO food (`id`, `name`,`image`, `price`) VALUES
@@ -87,5 +84,10 @@ INSERT INTO `customer` (`customer_id`, `customer_name`, `password`, `address`) V
 --個数を”
 
 
-
 --外部キーで顧客のIDを取得
+
+-- create table product (
+-- 	castomer_id int(11) not null,	
+-- 	foreign key(castomer_id) references customer(customer_id)
+-- );
+--
