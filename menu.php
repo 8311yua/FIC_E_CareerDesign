@@ -7,9 +7,8 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <!-- タイトル -->
-        
         <title>Shitamichi's Bakery</title>
-        <link rel="icon" type="image/x-icon" href="../assets/images/logo2.png" />
+        <link rel="icon" type="image/x-icon" href="assets/images/logo2.png" />
         <!-- icons-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
