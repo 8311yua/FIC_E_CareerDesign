@@ -21,10 +21,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     </head>
-<<<<<<< HEAD
-=======
 
->>>>>>> 79347a88a1cb050e537b99f61cc5b2ac22e66382
     <header class="site-header">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
@@ -35,43 +32,20 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto ul-nav">
                         <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="index.html"><span>Home</span><br>ホーム</a></li>
-<<<<<<< HEAD
-                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="seat/seat_check.php"><span>Reservation</span><br>座席予約</a></li>
-                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="login/login_input.php"><span>login</span><br>ログイン</a></li>
-                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="Cart-show.php"><span>Menu</span><br>予約一覧</a></li>
-
-=======
                         <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="menu.php"><span>Menu</span><br>商品予約</a></li>
                         <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="seat/seat_reservation.php"><span>Reservation</span><br>座席予約</a></li>
                         <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="Cart-show.php"><span>Reservation</span><br>カート一覧</a></li>
->>>>>>> 79347a88a1cb050e537b99f61cc5b2ac22e66382
+
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-<<<<<<< HEAD
     <body>
         <!-- データベース -->
         <?php require 'server.php' ?>
         <!-- Navigation-->
-=======
-    <!-- endスライド画像 -->
 
-    <body>
-        <!-- メニューバー -->
-        <div class="wrapper">
-            <h1 class="heading site-heading text-center text-faded d-none d-lg-block">Shitamichi's Bakery</h1>
-            <ul class="slider">
-                <li class="slider-item slider-item01"></li>
-                <li class="slider-item slider-item02"></li>
-                <li class="slider-item slider-item03"></li>
-                <li class="slider-item slider-item04"></li>
-            </ul>
-        </div>
-        <!-- メニューバー終了 -->
-
->>>>>>> 79347a88a1cb050e537b99f61cc5b2ac22e66382
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
                 <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.php">Shitamichi's Bakery</a>

@@ -19,12 +19,6 @@
 
 <?php
 unset($_SESSION['customer']);
-<<<<<<< HEAD
-=======
-// $pdo=new PDO('mysql:host=localhost;dbname=reserve_bakery;charset=utf8',
-//     'discipline', 'tr_2146');
-require '../server.php';
->>>>>>> 79347a88a1cb050e537b99f61cc5b2ac22e66382
 
 $sql=$pdo->prepare('select * from customer where customer_name=? and password=?');
 $sql->execute([$_REQUEST['name'], $_REQUEST['password']]);
