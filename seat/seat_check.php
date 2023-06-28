@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="home1.css">
 </head>
 <body>
+<?php require '../server.php' ?>
+<form action="../index.html" metod="post">
+
 <?php
 if (!isset($_SESSION['customer'])) {
 	echo '予約するにはログインしてください。';
 } else {
-    $pdo=new PDO('mysql:host=localhost;dbname=reserve_bakery;charset=utf8',
-    'discipline', 'tr_2146');
     $id=$_SESSION['customer']['id'];
     $seat_type=$_POST["seat_type"];
     $num_people=$_POST["num_people"];
@@ -33,5 +34,6 @@ if (!isset($_SESSION['customer'])) {
     
 }
 ?>
+</form>
 </body>
 </html>

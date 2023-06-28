@@ -2,8 +2,8 @@
 <!DOCTYPE htmel>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Check</title>
 
@@ -13,9 +13,9 @@
 <body>
     <div class="login-wrap">
     <div class="login-html">
+    <?php require '../server.php' ?>
+    
     <?php
-    $pdo=new PDO('mysql:host=localhost;dbname=reserve_bakery;charset=utf8',
-    'discipline', 'tr_2146');
     $staff_name=$_POST['name']; //前の画面から入力値を受け取り、$staff_nameに格納
     $staff_pass=$_POST['pass']; //前の画面から入力値を受け取り、$staff_passに格納
     $staff_pass2=$_POST['pass2']; //前の画面から入力値を受け取り、$staff_pass2に格納

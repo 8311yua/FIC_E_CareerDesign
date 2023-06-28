@@ -1,4 +1,3 @@
-<!-- 現メニュー一覧 -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,9 +6,8 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <!-- タイトル -->
-        
         <title>Shitamichi's Bakery</title>
-        <link rel="icon" type="image/x-icon" href="../assets/images/logo2.png" />
+        <link rel="icon" type="image/x-icon" href="assets/images/logo2.png" />
         <!-- icons-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -21,40 +19,28 @@
         <!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css"> -->
 
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/photograph.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     </head>
-    <header>
-        <div class="wrapper">
-            <h1 class="heading site-heading text-center text-faded d-none d-lg-block">Shitamichi's Bakery</h1>
-                <!-- <span class="site-heading-upper text-primary mb-3">
-                    <img style="width: 10%;" src="assets/images/logo4.png" alt="..." />
-                </span> -->
-                <!-- <span class="site-heading-lower">Shitamichi's Bakery</span><br>
-                <span class="site-heading-lower" style="font-size: 50%;">思わず笑顔になるおいしいコーヒーを提供しています。<br>クッキーやクロワッサン、タルトやケーキなどのお菓子と一緒にいかがでしょうか。</span>
-                -->
-                <ul class="slider">
-                    <li class="slider-item slider-item01"></li>
-                    <li class="slider-item slider-item02"></li>
-                    <li class="slider-item slider-item03"></li>
-                    <li class="slider-item slider-item04"></li>
-                </ul>
-            
-        </div>
-    </header>
-    <body>
+    <header class="site-header">
+        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none " href="index.php">Shitamichi's Bakery</a>
+                <img style="width: 10%;" src="assets/images/logo.png" alt="..." />
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none " href="index.html">Shitamichi's Bakery</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto ul-nav">
                         <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="index.html"><span>Home</span><br>ホーム</a></li>
+                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="seat/seat_check.php"><span>Reservation</span><br>座席予約</a></li>
+                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="login/login_input.php"><span>login</span><br>ログイン</a></li>
                         <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="Cart-show.php"><span>Menu</span><br>予約一覧</a></li>
+
                     </ul>
                 </div>
             </div>
         </nav>
+    </header>
+    <body>
         <!-- データベース -->
         <?php require 'server.php' ?>
         <!-- Navigation-->

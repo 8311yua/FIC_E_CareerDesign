@@ -97,7 +97,7 @@ ul{
 
 .ul-nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 800px;
     list-style: none;
 }
@@ -157,7 +157,7 @@ h1{
     
 }
 .site-header{
-    background: rgba(255, 255, 255, 0.587);
+    background: rgba(255, 255, 255, 0.658);
     top: 0;
     display: flex;
     padding-left: 20px;
@@ -165,4 +165,29 @@ h1{
     justify-content: space-between;
     width: 100%;
     z-index: 999;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    margin: 0 auto 50px;
+    width: 1000px;
+}
+.wrap:nth-child(even){
+    flex-direction: row-reverse;
+}
+.image{
+    width: 70%;
+}
+.text {
+    padding: 0 100px;
+    width: 70%;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.text-p{
+    font-size: large;
 }
