@@ -21,7 +21,6 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     </head>
-
     <header class="site-header">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
@@ -45,7 +44,6 @@
         <!-- データベース -->
         <?php require 'server.php' ?>
         <!-- Navigation-->
-
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
                 <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.php">Shitamichi's Bakery</a>
