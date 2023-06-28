@@ -150,9 +150,9 @@ h1{
 }
 
 .heading {
-    -webkit-text-stroke: 3px #000000;
+    -webkit-text-stroke: 3px #ffffff;
     text-shadow: 6px 6px 0 #7b5136;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-style: italic;
     
 }
