@@ -20,12 +20,14 @@
 
         <!-- 自作CSS -->
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/mystyle.css" rel="stylesheet" type="text/css" >
+        <link href="css/mystyle.css" rel="stylesheet">
     </head>
+
     <body>
+        <!-- メニューバー -->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none " href="index.html">Shitamichi's Bakery</a>
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none " href="index.php">Shitamichi's Bakery</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto ul-nav">
@@ -35,25 +37,16 @@
                 </div>
             </div>
         </nav>
+        <!-- メニューバー終了 -->
         <?php session_start(); ?>
-        <?php
-        // if (!isset($_SESSION['customer'])) {
-        // 	echo '購入手続きを行うにはログインしてください。';
-        // } else 
-        if (empty($_SESSION['Food'])) {
-            echo 'カートに商品がありません。';
-        } else {
-            // echo '<p>お名前：', $_SESSION['customer']['name'], '</p>';
-            // echo '<p>ご住所：', $_SESSION['customer']['address'], '</p>';
-            // echo '<hr>';
-            require 'cart.php';
-            echo '<hr>';
-            echo '<p>内容をご確認いただき、購入を確定してください。</p>';
-            echo '<a href="purchase-output.php">購入を確定する</a>';
-            
-        }
+        <?php 
+        require 'server.php';
+
+        $sql = $pdo->prepare('insert into product values(?,?,?,?)');
+        if($sql->execute([$_REQUEST['id'],$_REQUEST['name'],$_REQUEST['price'],$_POST["count"]])){
+            echo 'mesi商品の追加に成功しました。';
+            echo $_REQUEST['count'];
+        };
         ?>
     </body>
 </html>
-
-

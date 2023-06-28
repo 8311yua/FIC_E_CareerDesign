@@ -99,7 +99,7 @@ ul{
     display: flex;
     justify-content: space-between;
     width: 800px;
-    
+    list-style: none;
 }
 
 .li-nav{
@@ -125,7 +125,7 @@ li a span {
     font-size: 13px;
 }
 a{
-	color: #fff;
+    color: #622a00;
 }
 
 a:hover,
@@ -156,10 +156,12 @@ h1{
     font-style: italic;
     
 }
+
 .site-header{
     background: rgba(255, 255, 255, 0.587);
+    top: 0;
     display: flex;
-    padding: 20px;
+    padding-left: 20px;
     position: fixed;
     justify-content: space-between;
     width: 100%;
