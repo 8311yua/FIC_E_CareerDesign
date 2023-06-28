@@ -125,7 +125,7 @@ li a span {
     font-size: 13px;
 }
 a{
-	color: #fff;
+    color: #622a00;
 }
 
 a:hover,
@@ -156,6 +156,7 @@ h1{
     font-style: italic;
     
 }
+
 .site-header{
     background: rgba(255, 255, 255, 0.658);
     top: 0;
@@ -165,6 +166,7 @@ h1{
     justify-content: space-between;
     width: 100%;
     z-index: 999;
+<<<<<<< HEAD
 }
 .wrap{
     display: flex;
@@ -190,4 +192,6 @@ img{
 }
 .text-p{
     font-size: large;
+=======
+>>>>>>> 79347a88a1cb050e537b99f61cc5b2ac22e66382
 }

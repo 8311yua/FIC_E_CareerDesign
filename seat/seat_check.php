@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<form action="store.html">
+<form action="../index.html">
 <!DOCTYPE htmel>
 <html lang="ja">
 <head>
@@ -19,6 +19,10 @@
 if (!isset($_SESSION['customer'])) {
 	echo '予約するにはログインしてください。';
 } else {
+<<<<<<< HEAD
+=======
+    require '../server.php';
+>>>>>>> 79347a88a1cb050e537b99f61cc5b2ac22e66382
     $id=$_SESSION['customer']['id'];
     $seat_type=$_POST["seat_type"];
     $num_people=$_POST["num_people"];

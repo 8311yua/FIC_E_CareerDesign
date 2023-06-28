@@ -18,10 +18,13 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css"> -->
 
+        <!-- 自作CSS -->
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/mystyle.css" rel="stylesheet" type="text/css" >
+        <link href="css/mystyle.css" rel="stylesheet" >
     </head>
+
     <body>
+        <!-- メニューバー -->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
                 <a class="navbar-brand text-uppercase fw-bold d-lg-none " href="index.php">Shitamichi's Bakery</a>
@@ -34,6 +37,7 @@
                 </div>
             </div>
         </nav>
+        <!-- メニューバー終了 -->
         <?php session_start(); ?>
         <?php
         unset($_SESSION['Food'][$_REQUEST['id']]);

@@ -17,10 +17,14 @@
         <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css"> -->
-
+        <!-- 自作CSS -->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     </head>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 79347a88a1cb050e537b99f61cc5b2ac22e66382
     <header class="site-header">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
@@ -31,19 +35,43 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto ul-nav">
                         <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="index.html"><span>Home</span><br>ホーム</a></li>
+<<<<<<< HEAD
                         <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="seat/seat_check.php"><span>Reservation</span><br>座席予約</a></li>
                         <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="login/login_input.php"><span>login</span><br>ログイン</a></li>
                         <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="Cart-show.php"><span>Menu</span><br>予約一覧</a></li>
 
+=======
+                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="menu.php"><span>Menu</span><br>商品予約</a></li>
+                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="seat/seat_reservation.php"><span>Reservation</span><br>座席予約</a></li>
+                        <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase" href="Cart-show.php"><span>Reservation</span><br>カート一覧</a></li>
+>>>>>>> 79347a88a1cb050e537b99f61cc5b2ac22e66382
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+<<<<<<< HEAD
     <body>
         <!-- データベース -->
         <?php require 'server.php' ?>
         <!-- Navigation-->
+=======
+    <!-- endスライド画像 -->
+
+    <body>
+        <!-- メニューバー -->
+        <div class="wrapper">
+            <h1 class="heading site-heading text-center text-faded d-none d-lg-block">Shitamichi's Bakery</h1>
+            <ul class="slider">
+                <li class="slider-item slider-item01"></li>
+                <li class="slider-item slider-item02"></li>
+                <li class="slider-item slider-item03"></li>
+                <li class="slider-item slider-item04"></li>
+            </ul>
+        </div>
+        <!-- メニューバー終了 -->
+
+>>>>>>> 79347a88a1cb050e537b99f61cc5b2ac22e66382
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
                 <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.php">Shitamichi's Bakery</a>
@@ -56,50 +84,73 @@
                 </div>
             </div>
         </nav>
+        <!-- 内部処理、下記データベースの接続 -->
+        <?php require 'server.php' ?>
         <section class="product spad">
             <div class="container">
                 <div class="col-xl-9 col-lg-10 mx-auto">
+                <!-- food -->
                     <div class="bg-faded rounded p-5">
-                        <!-- food -->
                         <h2 id="food">Food</h2>
-                        <div class="row">                    
+                        <div class="row">
                             <?php
-                            foreach($pdo->query('select * from food') as $row){
-                                $id = $row['id'];
-                                echo '<div class="col-lg-4 col-md-6 col-sm-6">';
-                                echo '<div class="product__item"><tr>';
-                                echo '<a href="Food.php?id=', $id,'"><div class="product__item__pic set-bg"><img src="','assets/images/food/',$row['image'],'"class="product__item__pic"></div></a>';
-                                echo '<div class="product__item__text">';
-                                echo '<h5><a href="Food.php?id=',$id,'">',$row['name'],'</a></h5>';
-                                echo '<h5>','¥', $row['price'], '</h5>';
-                                echo '</div>';
-                                echo '</div>';
-                                echo '</div>';
-                            }
-                            ?>
+                                foreach($pdo->query('select * from food') as $row){
+                                    // 取得
+                                    $id = $row['id'];
+                                    echo '<div class="col-lg-4 col-md-6 col-sm-6">';
+                                    echo '<div class="product__item"><tr>';
+                                    // 画像にリンクの貼り付け
+                                    echo '<a href="Food.php?id=', $id,'"><div class="menu__item__pic set-bg"><img src="','assets/images/food/',$row['image'],'"class="menu__item__pic"></div></a>';
+                                    echo '<div class="product__item__text">';
+                                    // 名前にリンクの貼り付け
+                                    echo '<h5><a href="Food.php?id=',$id,'">',$row['name'],'</a></h5>';
+                                    // 値段の表示
+                                    echo '<h5>','¥', $row['price'], '</h5><br>';
+                                    echo '</div>';
+                                    echo '</div>';
+                                    echo '</div>';
+                                }
+                                ?>
                         </div>
-                        <!-- drink -->
+                    </div>
+                    <br><br>
+                <!-- food end -->
+
+                <!-- drink -->
+                    <div class="bg-faded rounded p-5">
                         <h2 id="drink">Drink</h2>
                         <div class="row">
                             <?php
-                            foreach($pdo->query('select * from drink') as $row){
-                                $id = $row['id'];
-                                echo '<div class="col-lg-4 col-md-6 col-sm-6">';
-                                echo '<div class="product__item"><tr>';
-                                echo '<a href="Drink.php?id=', $id,'"><div class="product__item__pic set-bg"><img src="','assets/images/drink/',$row['image'],'"class="product__item__pic"></div></a>';
-                                echo '<div class="product__item__text">';
-                                echo '<h5><a href="Drink.php?id=',$id,'">',$row['name'],'</a></h5>';
-                                echo '<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5>';
-                                echo '</div>';
-                                echo '</div>';
-                                echo '</div>';
-                            }
-                            ?>
+                                foreach($pdo->query('select * from drink') as $row){
+                                    $id = $row['id'];
+                                    echo '<div class="col-lg-4 col-md-6 col-sm-6">';
+                                    echo '<div class="product__item"><tr>';
+                                    // 画像にリンクの貼り付け
+                                    echo '<a href="Drink.php?id=', $id,'"><div class="menu__item__pic set-bg"><img src="','assets/images/drink/',$row['image'],'"class="menu__item__pic"></div></a>';
+                                    echo '<div class="product__item__text">';
+                                    // 名前にリンクの貼り付け
+                                    echo '<h5><a href="Drink.php?id=',$id,'">',$row['name'],'</a></h5>';
+                                    // 値段の表示
+                                    echo '<h5>','¥', $row['prices'],'~¥',$row['pricel'],'</h5><br>';
+                                    echo '</div>';
+                                    echo '</div>';
+                                    echo '</div>';
+                                }
+                                ?>
                         </div>
                     </div>
+                <!-- drink end -->
                 </div>
             </div>
         </section>
+        <!-- 内部処理end -->
+        
+        <footer class="footer text-faded text-center py-5">
+            <div class="container">
+                <p class="m-0 small">&copy; Shitamichi's Bakery</p>
+            </div>
+        </footer>
+        <!-- スライドのjs -->
         <script src="js/myjs.js"></script>
     </body>
 </html>

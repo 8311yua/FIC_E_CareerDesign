@@ -56,7 +56,7 @@
                                 echo'<h3>個数 : <select name="count" class="option_color frame_black"></h3>';
                                 // 個数の処理(forで処理)
                                 for ($i=1; $i<=10; $i++){
-                                    echo '<div class="option_color"><option value="',$i,'">',$i,'</option></div>';
+                                    echo '<option value="',$i,'">',$i,'</option>';
                                 }
                                 echo'</select></p>';
 

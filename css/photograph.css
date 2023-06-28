@@ -1,7 +1,45 @@
-/*画像サイズ */
-.product__item__pic {
-	width: 96px;
-    height: 65px;
+/*メニュー一覧　画像サイズ */
+
+/* 元値 */
+/* width: 192px;
+height: 65px; */
+
+.menu__item__pic {
+	width: 230.4px;
+    height: 156px;
 	position: relative;
 	border-radius: 5px;
+}
+
+/* 各商品詳細内　画像サイズ */
+.product__item__pic {
+	width: 700px;
+    height: 500px;
+}
+
+/* カート追加　ホバーで色変更 */
+p.hover_color:hover{
+	color: hsl(0, 100%, 68%);
+}
+
+
+/* 個数選択 */
+/* 景色変更 */
+.option_color{
+	background-color: white;
+}
+/* 枠付け */
+.frame_black{
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #333333;
+	border-radius: 10px;
+}
+
+/* 左右余白 */
+.left_yohaku{
+	margin-left:40px
+}
+.right_yohaku{
+	margin-left:40px
 }
