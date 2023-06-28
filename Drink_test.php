@@ -57,7 +57,6 @@
                                 // 個数の処理(forで処理)
                                 for ($i=1; $i<=10; $i++){
                                     echo '<option value="',$i,'">',$i,'</option>';
-                                    // echo '<option input type="hidden" name="',$i,'" value="',$i,'">',$i,'</option>';
                                 }
                                 echo'</select></p>';
 

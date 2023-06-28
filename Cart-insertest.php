@@ -47,6 +47,8 @@
             echo 'mesi商品の追加に成功しました。';
             echo $_REQUEST['count'];
         };
+        require 'Cart.php';
+
         ?>
     </body>
 </html>
