@@ -16,23 +16,29 @@
 <form action="../index.html" metod="post">
 
 <?php
+$id=$_SESSION['customer']['id'];
+$stmt = $pdo->prepare("select customer_id from seat_reservation where customer_id = ?");
+$stmt->execute([$id]);
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
 if (!isset($_SESSION['customer'])) {
 	echo '予約するにはログインしてください。';
-} else {
+} else if ($row['customer_id'] != $id) {
     $id=$_SESSION['customer']['id'];
     $seat_type=$_POST["seat_type"];
     $num_people=$_POST["num_people"];
     $visit_day=$_POST["visit_day"];
+    $visit_time = $_POST["visit_time"];
+    $visit_date = ($visit_day."-".$visit_time);
     $stmt = $pdo->prepare("insert into seat_reservation(seat_number, num_people, customer_id, date) value(?, ?, ?, ?)");
-    $stmt->execute([$seat_type, $num_people, $id, $visit_day]);
+    $stmt->execute([$seat_type, $num_people, $id, $visit_date]);
     echo '投稿を完了しました';
     print '<input type="submit" value="TOPへ">';
-    echo $seat_type;
-    echo $num_people;
-    echo $id;
     echo $visit_day;
-    
-}
+    echo $visit_time;
+    echo $visit_date;
+  } else {
+    echo '既に登録されています。';
+  }
 ?>
 </form>
 </body>
