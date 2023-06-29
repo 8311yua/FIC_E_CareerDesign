@@ -80,7 +80,11 @@
 
 body {
   margin: 0;
-  margin-top: 160px;
+
+  /* ーー↓消すーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+  /* margin-top: 160px; */
+
+
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -7698,6 +7702,7 @@ textarea.form-control-lg {
 
 .text-uppercase {
   text-transform: uppercase !important;
+  font-size: 200;
 }
 
 .text-capitalize {
@@ -11366,8 +11371,12 @@ p {
   color: #e6a756;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  /* 文字色 */
-  color: rgba(255, 255, 255, 0.7);
+  /* 文字色 *
+  /* 下段/ */
+  /* ー↓色変更ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+  color: #CD853F;
+
+
   font-weight: 800;
 }
 #mainNav .navbar-nav .nav-item.active .nav-link {
