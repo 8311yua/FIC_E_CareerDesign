@@ -22,31 +22,31 @@
         <link href="css/photograph.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
         <!-- カートアイコンリンク -->
-    	<!-- https://fonts.google.com/icons -->
-    	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- https://fonts.google.com/icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-    	<!-- メニューバー -->
-    	<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-        	<div class="container">
-            	<a class="navbar-brand text-uppercase fw-bold d-lg-none " href="index.php">Shitamichi's Bakery</a>
-            	<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                	data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                	aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-                	<ul class="navbar-nav mx-auto ul-nav">
-                	    <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase"
-            	                href="index.html"><span>Home</span><br>ホーム</a></li>
-        	            <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase"
-    	                        href="menu.php"><span>Menu</span><br>商品予約</a></li>
-	                    <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase"
-                        	    href="seat/seat_reservation.php"><span>Reservation</span><br>座席予約</a></li>
-                    	<li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase"
-                            	href="store.html"><span>Store</span><br>店舗情報</a></li>
-                	</ul>
-            	</div>
-        	</div>
-    	</nav>
+    <!-- メニューバー -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none " href="index.php">Shitamichi's Bakery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto ul-nav">
+                    <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase"
+                            href="index.html"><span>Home</span><br>ホーム</a></li>
+                    <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase"
+                            href="menu.php"><span>Menu</span><br>商品予約</a></li>
+                    <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase"
+                            href="seat/seat_reservation.php"><span>Reservation</span><br>座席予約</a></li>
+                    <li class="nav-item li-nav px-lg-4"><a class="nav-link text-uppercase"
+                            href="store.html"><span>Store</span><br>店舗情報</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
         <!-- データベース -->
         <?php require 'server.php' ?>
         <!-- Navigation-->
