@@ -35,6 +35,7 @@ if (!isset($_SESSION['customer'])) {
     print '<input type="submit" value="TOPへ">';
   } else {
     echo '既に登録されています。';
+    print '<input type="button" onclick="history.back()" value="戻る" class="button">';
   }
 ?>
 </form>
