@@ -24,6 +24,7 @@
     </head>
 
     <body>
+        <?php error_reporting(0); ?>
         <!-- メニューバー -->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">

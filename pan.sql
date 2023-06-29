@@ -45,7 +45,6 @@ create table purchase (
     foreign key(customer_id) references customer(customer_id)
 );
 
-
 create table purchase_detail (
 	detail_id int not null, 
 	product_id int not null, 
@@ -53,6 +52,13 @@ create table purchase_detail (
 	primary key(detail_id, product_id), 
 	foreign key(detail_id) references purchase(purchase_id), 
 	foreign key(product_id) references product(product_id)
+);
+
+create table seat_reservation (
+    customer_id int not null primary key,
+    seat_number int not null,
+    num_people int not null,
+    date varchar(200) not null
 );
 
 

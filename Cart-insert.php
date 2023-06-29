@@ -39,6 +39,7 @@
         </nav>
         <!-- メニューバー終了 -->
         <?php session_start(); ?>
+        <?php error_reporting(0); ?>
         <?php require 'server.php' ?>
         <?php
         $id=$_REQUEST['id'];

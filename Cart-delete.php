@@ -39,6 +39,7 @@
         </nav>
         <!-- メニューバー終了 -->
         <?php session_start(); ?>
+        <?php error_reporting(0); ?>
         <?php
         unset($_SESSION['Food'][$_REQUEST['id']]);
         echo 'カートから商品を削除しました。';

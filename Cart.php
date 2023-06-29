@@ -3,6 +3,7 @@
         <div class="col-xl-9 col-lg-10 mx-auto">
             <div class="bg-faded rounded p-5">
                 <div class="row">
+				<?php error_reporting(0); ?>
                     <?php
                     if(!empty($_SESSION['Food'])){
                         echo'<table>';

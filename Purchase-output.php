@@ -1,4 +1,5 @@
 <?php session_start(); ?>
+<?php error_reporting(0); ?>
 <?php
 require 'server.php'; 
 
@@ -17,6 +18,7 @@ if ($sql->execute([$purchase_id, $_SESSION['customer']['id']])) {
 	unset($_SESSION['product']);
 	echo '購入手続きが完了しました。ありがとうございます。';
 } else {
-	echo '購入手続き中にエラーが発生しました。申し訳ございません。';
+	echo '購入手続き中にエラーが発生しました。申し訳ございません。</br>';
+	echo '<a class="material-icons btn btn--orange" href="Cart-show.php">予約一覧へ戻る</a>';
 }
 ?>
