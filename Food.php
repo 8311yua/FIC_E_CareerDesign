@@ -26,7 +26,7 @@
 
     <!-- 商品詳細 -->
     <body>
-        <br><br><br>
+        <br><br>
         <section class="product spad">
             <div class="col-xl-9 col-lg-10 mx-auto">
                 <div class="container">
