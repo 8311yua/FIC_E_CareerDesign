@@ -1,6 +1,4 @@
-<!-- 夏季課題のほう -->
 <!-- store.phpを変更する必要あり -->
-<!-- 夏季課題のほう -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>

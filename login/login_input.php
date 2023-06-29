@@ -1,4 +1,3 @@
-<!-- 夏季課題のほう -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>

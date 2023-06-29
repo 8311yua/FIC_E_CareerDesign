@@ -1,4 +1,3 @@
-<!-- 夏季課題のほう -->
 <!DOCTYPE htmel>
 <html lang="ja">
 <head>
@@ -14,14 +13,8 @@
     <div class="login-wrap">
     <div class="login-html">
     <?php require '../server.php' ?>
-<<<<<<< HEAD
     
     <?php
-=======
-    <?php
-    // $pdo=new PDO('mysql:host=localhost;dbname=reserve_bakery;charset=utf8',
-    // 'discipline', 'tr_2146');
->>>>>>> 79347a88a1cb050e537b99f61cc5b2ac22e66382
     $staff_name=$_POST['name']; //前の画面から入力値を受け取り、$staff_nameに格納
     $staff_pass=$_POST['pass']; //前の画面から入力値を受け取り、$staff_passに格納
     $staff_pass2=$_POST['pass2']; //前の画面から入力値を受け取り、$staff_pass2に格納
