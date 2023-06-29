@@ -43,3 +43,33 @@ p.hover_color:hover{
 .right_yohaku{
 	margin-left:40px
 }
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* メニューボタン */
+/* 固定 */
+.upper{
+	position:fixed;
+	right:50px;
+	bottom:50px;
+	transition:1s;
+	opacity:0.7;
+}
+.upper:hover{
+	opacity:1;
+}
+
+/* 装飾 */
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #946243;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #946243;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}

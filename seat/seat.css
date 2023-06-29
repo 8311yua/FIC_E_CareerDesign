@@ -1,6 +1,7 @@
 img {
     display: block;
     float:  left;               /* 要素を右に回り込ませる */
+    width: 25%;
   }
 
   .float_input {

@@ -19,15 +19,16 @@
         <!-- 自作CSS -->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/photograph.css" rel="stylesheet" />
-        <link href="css/mystyle.css" rel="stylesheet">
+        <link href="css/mystyle.css" rel="stylesheet" type="text/css" />
     </head>
+    <br>
 
     <!-- 商品詳細 -->
     <body>
         <br><br><br>
         <section class="product spad">
-            <div class="container">
-                <div class="col-xl-9 col-lg-10 mx-auto">
+        	<div class="col-xl-9 col-lg-10 mx-auto">
+            	<div class="container">
                     <div class="bg-faded rounded p-5">
 
                         <!-- 商品詳細処理 -->
@@ -44,13 +45,13 @@
                                 echo'<center><img src="assets/images/drink/',$row['image'],'" class="product__item__pic"></center><br>';
                                 echo'<div class="left_yohaku">';
                                 // 商品名
-                                echo'<h3>商品名:',$row['name'],'</h3>';
+                                echo'<h3>商品名:',$row['name'],'　　￥',$row['prices'],'~</h3>';
                                 // サイズ値段をラジオボタンで選択させる、選択されたpriceを送る
-                                echo'<h3>サイズ<br>';
-                                echo'<input type="radio" name="price" checked value="',$row['prices'],'">Sサイズ　　￥', $row['prices'],'<br>';
-                                echo'<input type="radio" name="price" value="',$row['pricem'],'">Mサイズ　　￥', $row['pricem'],'<br>';
-                                echo'<input type="radio" name="price" value="',$row['pricel'],'">Lサイズ　　￥', $row['pricel'],'<br>';
-                                echo'<br></h3>';
+                                echo'<h4>サイズ<br>';
+                                echo'<input type="radio" style="transform:scale(2.0);" name="price" checked value="',$row['prices'],'">Sサイズ　　￥', $row['prices'],'<br>';
+                                echo'<input type="radio" style="transform:scale(2.0);" name="price" value="',$row['pricem'],'">Mサイズ　　￥', $row['pricem'],'<br>';
+                                echo'<input type="radio" style="transform:scale(2.0);" name="price" value="',$row['pricel'],'">Lサイズ　　￥', $row['pricel'],'<br>';
+                                echo'<br></h4>';
 
                                 // 個数の表示
                                 echo'<h3>個数 : <select name="count" class="option_color frame_black"></h3>';
