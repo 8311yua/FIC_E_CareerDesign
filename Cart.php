@@ -3,8 +3,12 @@
         <div class="col-xl-9 col-lg-10 mx-auto">
             <div class="bg-faded rounded p-5">
                 <div class="row">
-				<?php error_reporting(0); ?>
+					<?php error_reporting(0); ?>
+					<?php session_start(); ?>
                     <?php
+					if (!isset($_SESSION['customer'])) {
+						echo '購入手続きを行うにはログインしてください。';
+					} else 
                     if(!empty($_SESSION['Food'])){
                         echo'<table>';
                         	echo'<th>商品名</th><th>価格</th><th>個数</th><th>小計</th>';

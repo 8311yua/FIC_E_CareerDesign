@@ -36,11 +36,8 @@ CREATE TABLE `customer` (
 
 
 create table purchase (
-    purchase_id int not null,
+    purchase_id int not null primary key,
     customer_id int not null,
-
-	-- 複合キー
-	PRIMARY KEY(purchase_id, customer_id),
 	-- 外部キー
     foreign key(customer_id) references customer(customer_id)
 );
@@ -51,7 +48,7 @@ create table purchase_detail (
 	count int not null, 
 	primary key(detail_id, product_id), 
 	foreign key(detail_id) references purchase(purchase_id), 
-	foreign key(product_id) references product(product_id)
+	foreign key(product_id) references food(id)
 );
 
 create table seat_reservation (
