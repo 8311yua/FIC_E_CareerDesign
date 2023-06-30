@@ -41,7 +41,7 @@
             </div>
         </nav>
     </header>
-<body>
+<body class="photo_top">
     <form class="form" action="seat_check.php" method="post">
         <!-- <img src="seat.png" alt="座席表"> -->
         <div class="float_input">
