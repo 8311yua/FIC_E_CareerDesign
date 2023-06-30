@@ -34,8 +34,9 @@
                         <!-- 商品詳細処理 -->
                         <div class="row">     
                             <!-- SQLの接続 -->
-                            <?php require 'server.php' ?>
+
                             <?php
+                            require 'server.php';
                             $sql=$pdo -> prepare('select * from Food where id=?');
                             $sql->execute([$_REQUEST['id']]);
                             foreach($sql as $row){
